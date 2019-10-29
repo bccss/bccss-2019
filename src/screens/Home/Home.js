@@ -19,12 +19,39 @@ const SubtitleText = styled.p`
   margin: 0px;
 `;
 
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+`;
+
+const EmailInput = styled.input`
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+`;
+
+const Button = styled.button`
+  background-color: #ffdd57;
+  padding: 10px 20px;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  margin-top: 10px;
+`;
+
 class Home extends Component {
   render() {
     return (
       <Container>
         <HeaderText>Boston College</HeaderText>
         <SubtitleText>Computer Science Society</SubtitleText>
+        <InputContainer>
+          <EmailInput placeholder="Email" />
+          <Button>Join</Button>
+        </InputContainer>
       </Container>
     );
   }
