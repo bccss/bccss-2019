@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const CardContainer = styled.div`
   width: 45vw;
-  margin-top: 20px;
   position: relative;
   overflow: hidden;
   border-radius: 35px;
