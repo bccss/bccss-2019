@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { EventCard } from "../../components";
 
 import FlyingBirds from "./FlyingBirds";
 
@@ -44,6 +45,11 @@ const Button = styled.button`
   margin-top: 10px;
 `;
 
+const EventCardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 class Home extends Component {
   render() {
     return (
@@ -51,6 +57,9 @@ class Home extends Component {
         <FlyingBirds />
         <HeaderText>Boston College</HeaderText>
         <SubtitleText>Computer Science Society</SubtitleText>
+        <EventCardContainer>
+          <EventCard />
+        </EventCardContainer>
         <InputContainer>
           <EmailInput placeholder="Email" />
           <Button>Join</Button>
