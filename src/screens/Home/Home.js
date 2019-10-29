@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import FlyingBirds from "./FlyingBirds";
+
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -46,6 +48,7 @@ class Home extends Component {
   render() {
     return (
       <Container>
+        <FlyingBirds />
         <HeaderText>Boston College</HeaderText>
         <SubtitleText>Computer Science Society</SubtitleText>
         <InputContainer>
