@@ -58,7 +58,7 @@ class EventCard extends Component {
             <p>
               Do you like creating things? Are you HYPED for halloweekend? Come
               enjoy some spooky treats and meet other people interested in
-              participating in BC's hackathon!{" "}
+              participating in BC's hackathon!
             </p>
           </div>
         </InfoContainer>

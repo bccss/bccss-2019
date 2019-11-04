@@ -23,10 +23,7 @@ const Container = styled.div`
 class Team extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      var1: 20,
-      var2: "asd"
-    };
+    this.state = {};
   }
 
   render() {

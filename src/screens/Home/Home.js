@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import Typing from "react-typing-animation";
 import styled from "styled-components";
 import { EventCard } from "../../components";
 
 import FlyingBirds from "./FlyingBirds";
+import Background from "./Background";
 
 const Container = styled.div`
   width: 100vw;
@@ -13,14 +15,15 @@ const Container = styled.div`
 
 const HeaderText = styled.p`
   text-align: center;
-  font-size: 48px;
-  margin: 25px;
+  font-size: 72px;
+  /* margin: 50px; */
 `;
 
 const SubtitleText = styled.p`
+  font-family: "Press Start 2P", cursive;
   text-align: center;
-  font-size: 38px;
-  margin: 0px;
+  font-size: 42px;
+  /* margin: 25px 25px 50px; */
 `;
 
 const InputContainer = styled.div`
@@ -28,9 +31,8 @@ const InputContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   position: absolute;
-  bottom: 75px;
+  bottom: 125px;
   width: 100%;
 `;
 
@@ -65,9 +67,15 @@ class Home extends Component {
   render() {
     return (
       <Container>
-        <FlyingBirds />
+        {/* <FlyingBirds /> */}
+        {/* <Background /> */}
         <HeaderText>Boston College</HeaderText>
-        <SubtitleText>Computer Science Society</SubtitleText>
+        <Typing speed={100}>
+          <SubtitleText>{"       "}</SubtitleText>
+          <Typing.Delay ms={800} />
+          <SubtitleText>Computer Science Society</SubtitleText>
+          <Typing.Delay ms={100000} />
+        </Typing>
         <EventCardContainer>
           <EventCard />
         </EventCardContainer>
