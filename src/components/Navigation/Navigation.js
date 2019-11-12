@@ -22,14 +22,20 @@ const NavItemsContainer = styled.div`
   align-self: center;
 `;
 
-let NavItem = styled.p`
+let NavItem = styled.div`
   padding: 0px 15px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 200;
   font-size: 20px;
+
+  z-index: 100;
+  :hover {
+    color: #35298f;
+    font-weight: 500;
+  }
 `;
 
-let SelectedNavItem = styled.p`
+let SelectedNavItem = styled.div`
   padding: 0px 15px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
