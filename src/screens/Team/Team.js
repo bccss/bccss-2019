@@ -141,9 +141,10 @@ class Team extends Component {
   };
 
   renderTeamButtons = () => {
-    let renderedTeamButtons = boardMembers.map(team => {
+    let renderedTeamButtons = boardMembers.map((team, index) => {
       return (
         <STeamButton
+          key={index}
           selected={team.name === this.state.currentTeam}
           onClick={() => this.setState({ currentTeam: team.name })}
         >
@@ -158,9 +159,10 @@ class Team extends Component {
   render() {
     let renderedTeamButtons = this.renderTeamButtons();
 
-    let renderedTeams = boardMembers.map(team => {
+    let renderedTeams = boardMembers.map((team, index) => {
       return this.renderTeam(team);
     });
+
     return (
       <STeam>
         <STeamButtonGroup>{renderedTeamButtons}</STeamButtonGroup>

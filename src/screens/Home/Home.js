@@ -21,6 +21,7 @@ const HeaderText = styled.p`
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
   padding-top: 150px;
+  color: #35298f;
   /* margin: 50px; */
 `;
 
@@ -30,6 +31,7 @@ const SubtitleText = styled.p`
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 300;
   margin: 0;
+  color: #35298f;
   /* margin: 25px 25px 50px; */
 `;
 

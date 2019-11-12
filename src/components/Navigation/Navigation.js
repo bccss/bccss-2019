@@ -3,12 +3,13 @@ import styled from "styled-components";
 import LogoSrc from "../../assets/images/Logo.svg";
 
 const NavigationContainer = styled.div`
-  position: absolute;
+  position: fixed;
   display: flex;
   width: 100vw;
   padding: 15px 15px;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 `;
 
 const Logo = styled.img`
@@ -17,26 +18,46 @@ const Logo = styled.img`
 `;
 
 const NavItemsContainer = styled.div`
+  padding: 15px 15px;
   display: flex;
   flex-direction: row;
   align-self: center;
 `;
 
 let NavItem = styled.div`
-  padding: 0px 15px;
+  margin: 0px 15px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 200;
   font-size: 20px;
 
+  cursor: pointer;
+
+  position: relative;
+
   z-index: 100;
+
+  ::before {
+    content: "";
+    width: 0%;
+    transition: width 0.45s;
+  }
+
   :hover {
     color: #35298f;
-    font-weight: 500;
+
+    ::before {
+      content: "";
+      border: 1px solid #35298f;
+      bottom: -5px;
+      position: absolute;
+      width: 100%;
+      transition: width 0.45s;
+    }
   }
 `;
 
 let SelectedNavItem = styled.div`
-  padding: 0px 15px;
+  margin: 0px 15px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
   color: #35298f;
@@ -66,9 +87,24 @@ class Navigation extends Component {
       if (screen.name === activeScreen) {
         return <SelectedNavItem key={i}>{screen.name}</SelectedNavItem>;
       } else {
-        return <NavItem key={i}>{screen.name}</NavItem>;
+        return (
+          <NavItem
+            key={i}
+            onClick={() => {
+              this.scrollTo(i);
+            }}
+          >
+            {screen.name}
+          </NavItem>
+        );
       }
     });
+  };
+
+  scrollTo = index => {
+    const activeScreen = this.state.screens[index].name;
+    this.setState({ activeScreen });
+    window.scrollTo({ top: window.innerHeight * index, behavior: "smooth" });
   };
 
   render() {
