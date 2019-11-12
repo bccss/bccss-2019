@@ -58,35 +58,17 @@ const boardMembers = [
 
 const STeam = styled.div`
   width: 100vw;
-  background-color: #e7e7e7;
-  background-color: gray;
-`;
-
-const STeamGroup = styled.div`
-  border: black 1px solid;
-  align: center;
-  .members {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-`;
-
-const SMember = styled.div`
-  margin: 25px;
-  text-align: center;
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 150px;
-  }
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+  border: 1px black solid;
 `;
 
 const STeamButtonGroup = styled.div`
-  border: black 1px solid;
-  width: 80vw;
+  width: 60vw;
   height: 200px;
   margin: auto;
+  margin-top: 20vh;
+  margin-bottom: 100px;
 
   display: flex;
   flex-direction: row;
@@ -98,9 +80,9 @@ const STeamButton = styled.div`
   margin: 25px;
   text-align: center;
   img {
-    border: ${props => (props.selected ? "blue solid 8px" : "none")};
-    width: 150px;
-    height: 150px;
+    border: ${props => (props.selected ? "blue solid 5px" : "none")};
+    width: 75px;
+    height: 75px;
     border-radius: 150px;
 
     transition: all 250ms ease-out;
@@ -108,6 +90,27 @@ const STeamButton = styled.div`
       cursor: pointer;
       transform: scale(1.15) translateY(-3px);
     }
+  }
+`;
+
+const STeamGroup = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  .members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`;
+
+const SMember = styled.div`
+  margin: 25px;
+  text-align: center;
+  img {
+    width: 125px;
+    height: 125px;
+    border-radius: 125px;
   }
 `;
 
@@ -130,7 +133,7 @@ class Team extends Component {
     if (this.state.currentTeam === teamObj.name) {
       return (
         <STeamGroup>
-          <h1>{teamObj.name}</h1>
+          {/* <h1>{teamObj.name}</h1> */}
           <div className="members">{teamMembers}</div>
         </STeamGroup>
       );
@@ -145,7 +148,7 @@ class Team extends Component {
           onClick={() => this.setState({ currentTeam: team.name })}
         >
           <img src="http://via.placeholder.com/150x150" />
-          <h1>{team.name}</h1>
+          <h3>{team.name}</h3>
         </STeamButton>
       );
     });
@@ -161,7 +164,7 @@ class Team extends Component {
     return (
       <STeam>
         <STeamButtonGroup>{renderedTeamButtons}</STeamButtonGroup>
-        {renderedTeams}
+        <div>{renderedTeams}</div>
       </STeam>
     );
   }
