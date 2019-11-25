@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Home, About, Events, Projects, Resources, Team } from "./screens";
+import {
+  Home,
+  About,
+  Events,
+  Projects,
+  Resources,
+  Team,
+  Footer
+} from "./screens";
 import { Navigation } from "./components";
 
 class App extends Component {
@@ -11,9 +19,10 @@ class App extends Component {
         <Home />
         <About />
         <Events />
-        <Projects />
-        <Resources />
+        {/* <Projects /> */}
+        {/* <Resources /> */}
         <Team />
+        <Footer />
       </div>
     );
   }

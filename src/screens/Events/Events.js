@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import theme from "../../utils/theme";
+
+import Banner from "../../components/common/Banner";
+import SectionContainer from "../../components/common/SectionContainer";
 
 const Container = styled.div`
   width: 100vw;
@@ -12,9 +16,13 @@ const Container = styled.div`
 class Events extends Component {
   render() {
     return (
-      <Container>
-        <p>Events</p>
-      </Container>
+      <SectionContainer color="#fffbf8">
+        <Banner position="left">
+          <div className="banner">
+            <h1>Events</h1>
+          </div>
+        </Banner>
+      </SectionContainer>
     );
   }
 }

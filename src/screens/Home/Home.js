@@ -84,6 +84,7 @@ const Wave1 = styled.img`
 `;
 
 const Wave2 = styled.img`
+  z-index: 1;
   position: absolute;
   left: 0;
   bottom: -150px;

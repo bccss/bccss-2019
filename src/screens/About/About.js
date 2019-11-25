@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import theme from "../../utils/theme";
+import Banner from "../../components/common/Banner";
+import SectionContainer from "../../components/common/SectionContainer";
+
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -13,9 +17,13 @@ const Container = styled.div`
 class About extends Component {
   render() {
     return (
-      <Container>
-        <p>About</p>
-      </Container>
+      <SectionContainer color="#ffffff">
+        <Banner position="right">
+          <div className="banner">
+            <h1>About BCCSS</h1>
+          </div>
+        </Banner>
+      </SectionContainer>
     );
   }
 }

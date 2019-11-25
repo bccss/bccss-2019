@@ -4,3 +4,4 @@ export * from "./Events/Events";
 export * from "./Projects/Projects";
 export * from "./Resources/Resources";
 export * from "./Team/Team";
+export * from "./Footer/Footer";

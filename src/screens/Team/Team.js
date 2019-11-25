@@ -1,74 +1,38 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const boardMembers = [
-  {
-    name: "HTH",
-    members: [
-      { name: "John", img: "http://via.placeholder.com/150x150" },
-      { name: "Talia", img: "http://via.placeholder.com/150x150" },
-      { name: "Jaq", img: "http://via.placeholder.com/150x150" },
-      { name: "Megan", img: "http://via.placeholder.com/150x150" },
-      { name: "Joy", img: "http://via.placeholder.com/150x150" },
-      { name: "Sean", img: "http://via.placeholder.com/150x150" },
-      { name: "Daniel", img: "http://via.placeholder.com/150x150" }
-    ]
-  },
-  {
-    name: "Community",
-    members: [
-      { name: "Brian", img: "http://via.placeholder.com/150x150" },
-      { name: "Peter", img: "http://via.placeholder.com/150x150" },
-      { name: "Nathan", img: "http://via.placeholder.com/150x150" }
-    ]
-  },
-  {
-    name: "Outreach",
-    members: [
-      { name: "Lindsay", img: "http://via.placeholder.com/150x150" },
-      { name: "Hannah", img: "http://via.placeholder.com/150x150" }
-    ]
-  },
-  {
-    name: "Scholars",
-    members: [
-      { name: "Jolene", img: "http://via.placeholder.com/150x150" },
-      { name: "Will", img: "http://via.placeholder.com/150x150" }
-    ]
-  },
-  {
-    name: "Tech",
-    members: [
-      { name: "Roger", img: "http://via.placeholder.com/150x150" },
-      { name: "Subraiz", img: "http://via.placeholder.com/150x150" },
-      { name: "Gina", img: "http://via.placeholder.com/150x150" },
-      { name: "Jeff", img: "http://via.placeholder.com/150x150" },
-      { name: "Andres", img: "http://via.placeholder.com/150x150" }
-    ]
-  },
-  {
-    name: "Design",
-    members: [
-      { name: "Immalla", img: "http://via.placeholder.com/150x150" },
-      { name: "Adrianna", img: "http://via.placeholder.com/150x150" },
-      { name: "Jack", img: "http://via.placeholder.com/150x150" }
-    ]
-  }
-];
+import theme from "../../utils/theme";
+import SectionContainer from "../../components/common/SectionContainer";
+import Banner from "../../components/common/Banner";
+import { boardMembers } from "../../utils/boardConfig.js";
 
-const STeam = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(240, 240, 240);
-  border: 1px black solid;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlaceOfWorship,
+  faPencilAlt,
+  faHeart,
+  faGraduationCap,
+  faLaptopCode,
+  faUsers
+} from "@fortawesome/free-solid-svg-icons";
+
+const iconMap = {
+  faPlaceOfWorship: faPlaceOfWorship,
+  faPencilAlt: faPencilAlt,
+  faHeart: faHeart,
+  faGraduationCap: faGraduationCap,
+  faLaptopCode: faLaptopCode,
+  faUsers: faUsers
+};
+
+const STeamsContainer = styled.div`
+  position: relative;
 `;
 
 const STeamButtonGroup = styled.div`
-  width: 60vw;
-  height: 200px;
+  width: 80vw;
   margin: auto;
-  margin-top: 20vh;
-  margin-bottom: 100px;
+  padding-top: 5vh;
 
   display: flex;
   flex-direction: row;
@@ -79,24 +43,37 @@ const STeamButtonGroup = styled.div`
 const STeamButton = styled.div`
   margin: 25px;
   text-align: center;
-  img {
-    border: ${props => (props.selected ? "blue solid 5px" : "none")};
-    width: 75px;
-    height: 75px;
-    border-radius: 150px;
 
-    transition: all 250ms ease-out;
+  .buttonIcon {
+    position: relative;
+    background-color: ${theme.mainColor};
+    border-radius: 50%;
+
+    transition: transform 250ms ease-out, border 250ms ease-out;
     :hover {
       cursor: pointer;
       transform: scale(1.15) translateY(-3px);
+    }
+
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+    * {
+      transition: color 250ms ease-out;
+      color: ${props => (props.selected ? theme.secondaryColor : "white")};
+      margin-top: 25px;
+      width: 50px;
+      height: 50px;
     }
   }
 `;
 
 const STeamGroup = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 10vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   .members {
     display: flex;
     flex-direction: row;
@@ -106,19 +83,41 @@ const STeamGroup = styled.div`
 
 const SMember = styled.div`
   margin: 25px;
-  text-align: center;
   img {
-    width: 125px;
-    height: 125px;
-    border-radius: 125px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid ${theme.mainColor};
+    object-fit: cover;
+  }
+
+  h3 {
+    text-align: center;
   }
 `;
 
 class Team extends Component {
   constructor(props) {
     super(props);
-    this.state = { currentTeam: "HTH" };
+    this.state = { currentTeam: "Hackathon" };
   }
+
+  renderTeamButtons = () => {
+    let renderedTeamButtons = boardMembers.map(team => {
+      return (
+        <STeamButton
+          selected={team.name === this.state.currentTeam}
+          onClick={() => this.setState({ currentTeam: team.name })}
+        >
+          <div className="buttonIcon">
+            <FontAwesomeIcon icon={iconMap[team.icon]} />
+          </div>
+          <h3>{team.name}</h3>
+        </STeamButton>
+      );
+    });
+    return renderedTeamButtons;
+  };
 
   renderTeam = teamObj => {
     const teamMembers = teamObj.members.map(member => {
@@ -140,34 +139,23 @@ class Team extends Component {
     }
   };
 
-  renderTeamButtons = () => {
-    let renderedTeamButtons = boardMembers.map((team, index) => {
-      return (
-        <STeamButton
-          key={index}
-          selected={team.name === this.state.currentTeam}
-          onClick={() => this.setState({ currentTeam: team.name })}
-        >
-          <img src="http://via.placeholder.com/150x150" />
-          <h3>{team.name}</h3>
-        </STeamButton>
-      );
-    });
-    return renderedTeamButtons;
-  };
-
   render() {
     let renderedTeamButtons = this.renderTeamButtons();
 
-    let renderedTeams = boardMembers.map((team, index) => {
+    let renderedTeams = boardMembers.map(team => {
       return this.renderTeam(team);
     });
-
     return (
-      <STeam>
+      <SectionContainer>
+        <Banner position="right">
+          <div className="banner">
+            <h1>Our Board</h1>
+          </div>
+        </Banner>
+
         <STeamButtonGroup>{renderedTeamButtons}</STeamButtonGroup>
-        <div>{renderedTeams}</div>
-      </STeam>
+        <STeamsContainer>{renderedTeams}</STeamsContainer>
+      </SectionContainer>
     );
   }
 }
