@@ -72,8 +72,7 @@ class Navigation extends Component {
       screens: [
         { name: "Home", screen: "Home" },
         { name: "About Us", screen: "About" },
-        { name: "Projects", screen: "Projects" },
-        { name: "Resources", screen: "Resources" },
+        { name: "Events", screen: "Events" },
         { name: "Team", screen: "Team" }
       ],
       activeScreen: "Home"

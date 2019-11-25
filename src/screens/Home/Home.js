@@ -105,11 +105,25 @@ class Home extends Component {
           <SubtitleText>Computer Science Society</SubtitleText>
           <Typing.Delay ms={100000} />
         </Typing>
-        <InputContainer>
-          <Gasson src={GassonSrc} />
-          <EmailInput placeholder="student@bc.edu" />
-          <Button>Join</Button>
-        </InputContainer>
+        <form
+          action="http://bcskills.us4.list-manage.com/subscribe/post"
+          method="POST"
+        >
+          <InputContainer>
+            <Gasson src={GassonSrc} />
+            <EmailInput
+              type="email"
+              placeholder="student@bc.edu"
+              autocapitalize="off"
+              autocorrect="off"
+            />
+            <Button type="submit" name="subscribe">
+              Join
+            </Button>
+          </InputContainer>
+          <input type="hidden" name="u" value="1b70be498004c115d153aaeeb" />
+          <input type="hidden" name="id" value="59bdfc55c0" />
+        </form>
       </Container>
     );
   }

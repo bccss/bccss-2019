@@ -52,11 +52,13 @@ const STeamButton = styled.div`
     transition: transform 250ms ease-out, border 250ms ease-out;
     :hover {
       cursor: pointer;
-      transform: scale(1.15) translateY(-3px);
+      transform: scale(1.25) translateY(-3px);
     }
 
     width: 100px;
     height: 100px;
+    transform: ${props =>
+      props.selected ? "scale(1.25) translateY(-3px)" : "none"};
 
     text-align: center;
     * {
@@ -149,7 +151,7 @@ class Team extends Component {
       <SectionContainer>
         <Banner position="right">
           <div className="banner">
-            <h1>Our Board</h1>
+            <h1>Our Team</h1>
           </div>
         </Banner>
 

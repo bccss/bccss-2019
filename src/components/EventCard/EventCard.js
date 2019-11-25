@@ -1,13 +1,25 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import theme from "../../utils/theme";
 
 const CardContainer = styled.div`
-  width: 45vw;
-  position: relative;
-  overflow: hidden;
-  border-radius: 35px;
-  box-shadow: -4px 2px 12px rgba(0, 0, 0, 0.1);
-  padding: 0;
+  img {
+    z-index: 2;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .content {
+    background-color: ${theme.mainColor};
+    width: 450px;
+    margin-top: -50px;
+    padding: 65px 25px 25px;
+    border-radius: 25px;
+  }
+
+  color: white;
+  font-size: 1.2em;
 `;
 
 const ImageContainer = styled.div`
@@ -16,36 +28,12 @@ const ImageContainer = styled.div`
   overflow: hidden;
   border-radius: 35px;
 `;
-
-const EventImage = styled.img`
-  width: 100%;
-  height: 100%;
-  transition: 0.5s linear;
-
-  :hover {
-    opacity: 0.9;
-    transition: 0.5s transform linear;
-  }
-`;
-
-const InfoContainer = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 130px;
-  background-color: white;
-  opacity: 1;
-  bottom: 0;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  padding: 12px 25px;
-`;
-
 class EventCard extends Component {
   render() {
     return (
       <CardContainer>
-        <InfoContainer>
+        <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY3NDg4OTU3NjQxMTQwMDEz/halloween-gettyimages-172988453.jpg" />
+        <div className="content">
           <div style={{ display: "flex" }}>
             <p style={{ margin: 0 }}>Hacky Halloween</p> &nbsp;
             <p style={{ margin: 0 }}> • Fulton 255</p>
@@ -61,13 +49,10 @@ class EventCard extends Component {
               participating in BC's hackathon!
             </p>
           </div>
-        </InfoContainer>
-        <ImageContainer>
-          <EventImage src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY3NDg4OTU3NjQxMTQwMDEz/halloween-gettyimages-172988453.jpg" />
-        </ImageContainer>
+        </div>
       </CardContainer>
     );
   }
 }
 
-export { EventCard };
+export default EventCard;

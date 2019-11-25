@@ -36,18 +36,20 @@ const StyledIcon = styled.a`
 
   transition: all 200ms ease-in-out;
 
-  margin: 15px;
-  padding: 10px;
-  border-radius: 25%;
+  margin: 5px 15px 10px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: ${theme.mainColorDarker};
 
   img {
     transition: transform 200ms ease-in-out;
     vertical-align: middle;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   :hover {
     cursor: pointer;
+    background-color: ${theme.secondaryColor};
     img {
       transform: scale(1.2);
     }

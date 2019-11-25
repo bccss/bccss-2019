@@ -4,10 +4,11 @@ import theme from "../../utils/theme";
 
 import Banner from "../../components/common/Banner";
 import SectionContainer from "../../components/common/SectionContainer";
+import EventCard from "../../components/EventCard/EventCard";
 
-const Container = styled.div`
+const CardContainer = styled.div`
+  position: relative;
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +20,12 @@ class Events extends Component {
       <SectionContainer color="#fffbf8">
         <Banner position="left">
           <div className="banner">
-            <h1>Events</h1>
+            <h1>Upcoming Events</h1>
           </div>
         </Banner>
+        <CardContainer>
+          <EventCard />
+        </CardContainer>
       </SectionContainer>
     );
   }
