@@ -15,26 +15,10 @@ import seanchiang from "../assets/images/people/seanchiang.png";
 import taliakaplanian from "../assets/images/people/taliakaplanian.png";
 import yinzhema from "../assets/images/people/yinzhema.png";
 import rogerwang from "../assets/images/people/rogerwang.png";
-
-const teamPictures = {
-  brianha: brianha,
-  danielpark: danielpark,
-  ginachun: ginachun,
-  hannahjiang: hannahjiang,
-  jackmcclelland: jackmcclelland,
-  jaqpyle: jaqpyle,
-  jeffwang: jeffwang,
-  johnabreu: johnabreu,
-  jolenelozano: jolenelozano,
-  joykondo: joykondo,
-  lindsaypenkrat: lindsaypenkrat,
-  megancostello: megancostello,
-  nathanrankin: nathanrankin,
-  seanchiang: seanchiang,
-  taliakaplanian: taliakaplanian,
-  yinzhema: yinzhema,
-  rogerwang: rogerwang
-};
+import andresfernandez from "../assets/images/people/andresfernandez.png";
+import willfarley from "../assets/images/people/willfarley.png";
+import subraizahmed from "../assets/images/people/subraizahmed.png";
+import immallachen from "../assets/images/people/immallachen.png";
 
 const boardMembers = [
   {
@@ -77,8 +61,7 @@ const boardMembers = [
       { name: "Jolene", img: jolenelozano },
       {
         name: "Will",
-        img:
-          "https://friendlystock.com/wp-content/uploads/2018/10/2-cute-blue-robot-cartoon-clipart.jpg"
+        img: willfarley
       }
     ]
   },
@@ -92,15 +75,13 @@ const boardMembers = [
       },
       {
         name: "Subraiz",
-        img:
-          "https://friendlystock.com/wp-content/uploads/2018/10/2-cute-blue-robot-cartoon-clipart.jpg"
+        img: subraizahmed
       },
       { name: "Gina", img: ginachun },
       { name: "Jeff", img: jeffwang },
       {
         name: "Andres",
-        img:
-          "https://friendlystock.com/wp-content/uploads/2018/10/2-cute-blue-robot-cartoon-clipart.jpg"
+        img: andresfernandez
       }
     ]
   },
@@ -110,8 +91,7 @@ const boardMembers = [
     members: [
       {
         name: "Immalla",
-        img:
-          "https://friendlystock.com/wp-content/uploads/2018/10/2-cute-blue-robot-cartoon-clipart.jpg"
+        img: immallachen
       },
       {
         name: "Adrianna",
