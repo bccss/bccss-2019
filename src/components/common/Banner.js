@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../../utils/theme";
 
-const BlueBanner = styled.div`
+const BlueBanner = styled.div `
   position: relative;
   z-index: 1;
   width: 100vw;

@@ -44,11 +44,11 @@ let NavItem = styled.div `
   }
 
   :hover {
-    color: #35298f;
+    color: #8a100b;
 
     ::before {
       content: "";
-      border: 1px solid #35298f;
+      border: 1px solid #8a100b;
       bottom: -5px;
       position: absolute;
       width: 100%;
@@ -61,7 +61,7 @@ let SelectedNavItem = styled.div `
   margin: 0px 15px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
-  color: #35298f;
+  color: #dccaa0;
   font-size: 20px;
 `;
 
