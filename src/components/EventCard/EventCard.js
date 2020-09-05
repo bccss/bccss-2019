@@ -35,12 +35,30 @@ class EventCard extends Component {
         <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY3NDg4OTU3NjQxMTQwMDEz/halloween-gettyimages-172988453.jpg" />
         <div className="content">
           <div style={{ display: "flex" }}>
-            <p style={{ margin: 0 }}>Hacky Halloween</p> &nbsp;
-            <p style={{ margin: 0 }}> • Fulton 255</p>
+            <p
+              style={{
+                margin: 0,
+                color: "#dccaa0",
+                fontSize: "1.8em",
+                fontWeight: "bolder",
+              }}
+            >
+              Hacky Halloween
+            </p>
           </div>
-          <div style={{ display: "flex" }}>
-            <p style={{ margin: 0 }}>October 30th, 2019</p> &nbsp;
-            <p style={{ margin: 0 }}> • 5PM - 7PM</p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              borderBottom: "3px dashed #dccaa0",
+              paddingBottom: "20px",
+            }}
+          >
+            <p style={{ margin: 0 }}>October 30th, 2019 </p>
+            <p style={{ margin: 0 }}> • </p>
+            <p style={{ margin: 0 }}>5 PM - 7 PM </p>
+            <p style={{ margin: 0 }}> • </p>
+            <p style={{ margin: 0 }}>Fulton 255 </p>
           </div>
           <div>
             <p>
