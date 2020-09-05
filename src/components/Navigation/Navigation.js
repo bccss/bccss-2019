@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import LogoSrc from "../../assets/images/Logo.svg";
 
-const NavigationContainer = styled.div`
+const NavigationContainer = styled.div `
   position: fixed;
   display: flex;
+  background: rgba(255, 255, 255, 0.9);
   width: 100vw;
   padding: 15px 15px;
   align-items: center;
@@ -12,19 +13,19 @@ const NavigationContainer = styled.div`
   z-index: 5;
 `;
 
-const Logo = styled.img`
+const Logo = styled.img `
   left: 15px;
   position: absolute;
 `;
 
-const NavItemsContainer = styled.div`
+const NavItemsContainer = styled.div `
   padding: 15px 15px;
   display: flex;
   flex-direction: row;
   align-self: center;
 `;
 
-let NavItem = styled.div`
+let NavItem = styled.div `
   margin: 0px 15px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 200;
@@ -56,7 +57,7 @@ let NavItem = styled.div`
   }
 `;
 
-let SelectedNavItem = styled.div`
+let SelectedNavItem = styled.div `
   margin: 0px 15px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
@@ -65,55 +66,56 @@ let SelectedNavItem = styled.div`
 `;
 
 class Navigation extends Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.state = {
-      screens: [
-        { name: "Home", screen: "Home" },
-        { name: "About Us", screen: "About" },
-        { name: "Events", screen: "Events" },
-        { name: "Team", screen: "Team" }
-      ],
-      activeScreen: "Home"
+        this.state = {
+            screens: [
+                { name: "Home", screen: "Home" },
+                { name: "About Us", screen: "About" },
+                { name: "Events", screen: "Events" },
+                { name: "Team", screen: "Team" }
+            ],
+            activeScreen: "Home"
+        };
+    }
+
+    renderNavItems = () => {
+        const { screens, activeScreen } = this.state;
+
+        return screens.map((screen, i) => {
+            if (screen.name === activeScreen) {
+                return <SelectedNavItem key = { i } > { screen.name } < /SelectedNavItem>;
+            } else {
+                return ( <
+                    NavItem key = { i }
+                    onClick = {
+                        () => {
+                            this.scrollTo(i);
+                        }
+                    } > { screen.name } <
+                    /NavItem>
+                );
+            }
+        });
     };
-  }
 
-  renderNavItems = () => {
-    const { screens, activeScreen } = this.state;
+    scrollTo = index => {
+        const activeScreen = this.state.screens[index].name;
+        this.setState({ activeScreen });
+        window.scrollTo({ top: window.innerHeight * index, behavior: "smooth" });
+    };
 
-    return screens.map((screen, i) => {
-      if (screen.name === activeScreen) {
-        return <SelectedNavItem key={i}>{screen.name}</SelectedNavItem>;
-      } else {
-        return (
-          <NavItem
-            key={i}
-            onClick={() => {
-              this.scrollTo(i);
-            }}
-          >
-            {screen.name}
-          </NavItem>
+    render() {
+        return ( <
+            NavigationContainer >
+            <
+            Logo src = { LogoSrc }
+            /> <
+            NavItemsContainer > { this.renderNavItems() } < /NavItemsContainer> < /
+            NavigationContainer >
         );
-      }
-    });
-  };
-
-  scrollTo = index => {
-    const activeScreen = this.state.screens[index].name;
-    this.setState({ activeScreen });
-    window.scrollTo({ top: window.innerHeight * index, behavior: "smooth" });
-  };
-
-  render() {
-    return (
-      <NavigationContainer>
-        <Logo src={LogoSrc} />
-        <NavItemsContainer>{this.renderNavItems()}</NavItemsContainer>
-      </NavigationContainer>
-    );
-  }
+    }
 }
 
 export { Navigation };
