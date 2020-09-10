@@ -65,6 +65,7 @@ let SelectedNavItem = styled.div `
   font-size: 20px;
 `;
 
+// this is the navigation bar
 class Navigation extends Component {
     constructor(props) {
         super(props);
@@ -85,16 +86,14 @@ class Navigation extends Component {
 
         return screens.map((screen, i) => {
             if (screen.name === activeScreen) {
-                return <SelectedNavItem key = { i } > { screen.name } < /SelectedNavItem>;
+                return <SelectedNavItem key = { i } > { screen.name } </SelectedNavItem>;
             } else {
-                return ( <
-                    NavItem key = { i }
+                return ( <NavItem key = { i }
                     onClick = {
                         () => {
                             this.scrollTo(i);
                         }
-                    } > { screen.name } <
-                    /NavItem>
+                    } > { screen.name } </NavItem>
                 );
             }
         });
@@ -107,13 +106,11 @@ class Navigation extends Component {
     };
 
     render() {
-        return ( <
-            NavigationContainer >
-            <
-            Logo src = { LogoSrc }
-            /> <
-            NavItemsContainer > { this.renderNavItems() } < /NavItemsContainer> < /
-            NavigationContainer >
+        return ( 
+          <NavigationContainer>
+            <Logo src = { LogoSrc }/> 
+            <NavItemsContainer> { this.renderNavItems() } </NavItemsContainer> 
+          </NavigationContainer >
         );
     }
 }
