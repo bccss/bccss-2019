@@ -4,7 +4,7 @@ import styled from "styled-components";
 import theme from "../../utils/theme";
 import Banner from "../../components/common/Banner";
 import SectionContainer from "../../components/common/SectionContainer";
-import HTH from "../../assets/images/HTH.png";
+import HTH from "../../assets/images/HTH.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

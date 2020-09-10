@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import theme from "../../utils/theme";
-import HTH from "../../assets/images/HTH.png";
+import HTH from "../../assets/images/HTH.svg";
 
 import SectionContainer from "../../components/common/SectionContainer";
 import Banner from "../../components/common/Banner";
