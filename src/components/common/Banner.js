@@ -27,6 +27,7 @@ const BlueBanner = styled.div `
     line-height: 100px;
     h1 {
       font-size: 48px;
+      font-size: 1.5vw;
       margin: 0;
       margin-right: ${props => (props.position === "left" ? "50px" : "none")};
       margin-left: ${props => (props.position === "left" ? "none" : "60px")};
