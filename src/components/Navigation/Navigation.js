@@ -70,6 +70,9 @@ class Navigation extends Component {
     constructor(props) {
         super(props);
 
+        // add a scroll listener to update nav bar
+        this.listener = null;
+
         this.state = {
             screens: [
                 { name: "Home", screen: "Home" },
@@ -88,12 +91,15 @@ class Navigation extends Component {
             if (screen.name === activeScreen) {
                 return <SelectedNavItem key = { i } > { screen.name } </SelectedNavItem>;
             } else {
-                return ( <NavItem key = { i }
-                    onClick = {
-                        () => {
-                            this.scrollTo(i);
-                        }
-                    } > { screen.name } </NavItem>
+                return ( 
+                  <
+                    NavItem key = { i }
+                    onClick = { 
+                      () => { this.scrollTo(i); }
+                    }
+                  > 
+                    { screen.name } 
+                  </NavItem>
                 );
             }
         });
@@ -104,6 +110,26 @@ class Navigation extends Component {
         this.setState({ activeScreen });
         window.scrollTo({ top: window.innerHeight * index, behavior: "smooth" });
     };
+
+    // testing code from https://codesandbox.io/s/nifty-newton-f4j0j?file=/src/Header.js:203-605
+    componentDidMount() {
+      this.listener = document.addEventListener("scroll", e => {
+        var scrolled = document.scrollingElement.scrollTop;
+
+        // if scrolled 100 px
+        if (scrolled >= 50) {
+          // force update the status to 'events'
+          const activeScreen = this.state.screens[2].name;
+          this.setState({activeScreen});
+          console.log('updating nav bar');
+        } 
+      });
+    }
+
+    componentDidUpdate() {
+      document.removeEventListener("scroll", this.listener);
+    }
+
 
     render() {
         return ( 
