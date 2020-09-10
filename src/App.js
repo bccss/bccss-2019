@@ -4,8 +4,7 @@ import {
   Home,
   About,
   Events,
-  Projects,
-  Resources,
+  Wiki,
   Team,
   Footer
 } from "./screens";
@@ -19,9 +18,8 @@ class App extends Component {
         <Home />
         <About />
         <Events />
-        {/* <Projects /> */}
-        {/* <Resources /> */}
         <Team />
+        <Wiki />
         <Footer />
       </div>
     );
