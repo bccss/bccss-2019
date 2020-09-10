@@ -43,8 +43,7 @@ const InputContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 125px;
+  margin-top: 15%;
   width: 100%;
 `;
 
@@ -84,6 +83,7 @@ const WaveContainer = styled.div`
 const Wave1 = styled.img`
   position: absolute;
   right: 0;
+  max-width: 15%;
 `;
 
 const Wave2 = styled.img`
@@ -91,6 +91,7 @@ const Wave2 = styled.img`
   position: absolute;
   left: 0;
   bottom: -150px;
+  max-width: 15%;
 `;
 
 class Home extends Component {

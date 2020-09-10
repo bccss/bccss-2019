@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import theme from "../../utils/theme";
-import HTH from "../../assets/images/HTH.svg";
+import {ReactComponent as HTHLogo} from "../../assets/images/HTH.svg";
 
 import SectionContainer from "../../components/common/SectionContainer";
 import Banner from "../../components/common/Banner";
@@ -65,34 +65,10 @@ const STeamButton = styled.div`
     * {
       transition: color 250ms ease-out;
       color: ${(props) => (props.selected ? theme.secondaryColor : "white")};
+      fill: ${(props) => (props.selected ? theme.secondaryColor : "white")};
       margin-top: 25px;
       width: 50px;
       height: 50px;
-    }
-  }
-
-  .buttonImage {
-    position: relative;
-    background-color: ${theme.mainColor};
-    border-radius: 50%;
-
-    transition: transform 250ms ease-out, border 250ms ease-out;
-    :hover {
-      cursor: pointer;
-      transform: scale(1.25) translateY(-3px);
-    }
-
-    width: 100px;
-    height: 100px;
-    transform: ${(props) =>
-      props.selected ? "scale(1.25) translateY(-3px)" : "none"};
-
-    text-align: center;
-    * {
-      transition: color 250ms ease-out;
-      color: ${(props) => (props.selected ? theme.secondaryColor : "white")};
-      margin-top: 18px;
-      width: 60%;
     }
   }
 `;
@@ -138,8 +114,8 @@ class Team extends Component {
             selected={team.name === this.state.currentTeam}
             onClick={() => this.setState({ currentTeam: team.name })}
           >
-            <div className="buttonImage">
-              <img src={HTH} />
+            <div className="buttonIcon">
+              <HTHLogo/>
             </div>
             <h3>{team.name}</h3>
           </STeamButton>
