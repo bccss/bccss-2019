@@ -91,8 +91,8 @@ const STeamButton = styled.div`
     * {
       transition: color 250ms ease-out;
       color: ${(props) => (props.selected ? theme.secondaryColor : "white")};
-      margin-top: 22px;
-      width: 45%;
+      margin-top: 18px;
+      width: 60%;
     }
   }
 `;
