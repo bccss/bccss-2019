@@ -1,7 +1,7 @@
 const theme = {
-  mainColor: "#35298f",
-  mainColorDarker: "#212970",
-  secondaryColor: "#28dc8f"
+    mainColor: "#8a100b",
+    mainColorDarker: "#8a100b",
+    secondaryColor: "#dccaa0"
 };
 
 export default theme;

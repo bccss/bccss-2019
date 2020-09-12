@@ -23,7 +23,7 @@ import immallachen from "../assets/images/people/immallachen.png";
 const boardMembers = [
   {
     name: "Hackathon",
-    icon: "faPlaceOfWorship",
+    icon: "hth",
     members: [
       { name: "John", img: johnabreu },
       { name: "Talia", img: taliakaplanian },
@@ -31,11 +31,11 @@ const boardMembers = [
       { name: "Megan", img: megancostello },
       {
         name: "Joy",
-        img: joykondo
+        img: joykondo,
       },
       { name: "Sean", img: seanchiang },
-      { name: "Daniel", img: danielpark }
-    ]
+      { name: "Daniel", img: danielpark },
+    ],
   },
   {
     name: "Community",
@@ -43,16 +43,16 @@ const boardMembers = [
     members: [
       { name: "Brian", img: brianha },
       { name: "Peter", img: yinzhema },
-      { name: "Nathan", img: nathanrankin }
-    ]
+      { name: "Nathan", img: nathanrankin },
+    ],
   },
   {
     name: "Outreach",
     icon: "faHeart",
     members: [
       { name: "Lindsay", img: lindsaypenkrat },
-      { name: "Hannah", img: hannahjiang }
-    ]
+      { name: "Hannah", img: hannahjiang },
+    ],
   },
   {
     name: "Scholars",
@@ -61,9 +61,9 @@ const boardMembers = [
       { name: "Jolene", img: jolenelozano },
       {
         name: "Will",
-        img: willfarley
-      }
-    ]
+        img: willfarley,
+      },
+    ],
   },
   {
     name: "Tech",
@@ -71,19 +71,19 @@ const boardMembers = [
     members: [
       {
         name: "Roger",
-        img: rogerwang
+        img: rogerwang,
       },
       {
         name: "Subraiz",
-        img: subraizahmed
+        img: subraizahmed,
       },
       { name: "Gina", img: ginachun },
       { name: "Jeff", img: jeffwang },
       {
         name: "Andres",
-        img: andresfernandez
-      }
-    ]
+        img: andresfernandez,
+      },
+    ],
   },
   {
     name: "Design",
@@ -91,16 +91,16 @@ const boardMembers = [
     members: [
       {
         name: "Immalla",
-        img: immallachen
+        img: immallachen,
       },
       {
         name: "Adrianna",
         img:
-          "https://friendlystock.com/wp-content/uploads/2018/10/2-cute-blue-robot-cartoon-clipart.jpg"
+          "https://friendlystock.com/wp-content/uploads/2018/10/2-cute-blue-robot-cartoon-clipart.jpg",
       },
-      { name: "Jack", img: jackmcclelland }
-    ]
-  }
+      { name: "Jack", img: jackmcclelland },
+    ],
+  },
 ];
 
 export { boardMembers };

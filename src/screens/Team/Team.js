@@ -2,27 +2,28 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import theme from "../../utils/theme";
+import HTH from "../../assets/images/HTH.png";
+
 import SectionContainer from "../../components/common/SectionContainer";
 import Banner from "../../components/common/Banner";
 import { boardMembers } from "../../utils/boardConfig.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPlaceOfWorship,
-  faPencilAlt,
+  faPalette,
   faHeart,
   faGraduationCap,
   faLaptopCode,
-  faUsers
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 const iconMap = {
-  faPlaceOfWorship: faPlaceOfWorship,
-  faPencilAlt: faPencilAlt,
+  hth: null,
+  faPencilAlt: faPalette,
   faHeart: faHeart,
   faGraduationCap: faGraduationCap,
   faLaptopCode: faLaptopCode,
-  faUsers: faUsers
+  faUsers: faUsers,
 };
 
 const STeamsContainer = styled.div`
@@ -57,16 +58,41 @@ const STeamButton = styled.div`
 
     width: 100px;
     height: 100px;
-    transform: ${props =>
+    transform: ${(props) =>
       props.selected ? "scale(1.25) translateY(-3px)" : "none"};
 
     text-align: center;
     * {
       transition: color 250ms ease-out;
-      color: ${props => (props.selected ? theme.secondaryColor : "white")};
+      color: ${(props) => (props.selected ? theme.secondaryColor : "white")};
       margin-top: 25px;
       width: 50px;
       height: 50px;
+    }
+  }
+
+  .buttonImage {
+    position: relative;
+    background-color: ${theme.mainColor};
+    border-radius: 50%;
+
+    transition: transform 250ms ease-out, border 250ms ease-out;
+    :hover {
+      cursor: pointer;
+      transform: scale(1.25) translateY(-3px);
+    }
+
+    width: 100px;
+    height: 100px;
+    transform: ${(props) =>
+      props.selected ? "scale(1.25) translateY(-3px)" : "none"};
+
+    text-align: center;
+    * {
+      transition: color 250ms ease-out;
+      color: ${(props) => (props.selected ? theme.secondaryColor : "white")};
+      margin-top: 22px;
+      width: 45%;
     }
   }
 `;
@@ -105,24 +131,38 @@ class Team extends Component {
   }
 
   renderTeamButtons = () => {
-    let renderedTeamButtons = boardMembers.map(team => {
-      return (
-        <STeamButton
-          selected={team.name === this.state.currentTeam}
-          onClick={() => this.setState({ currentTeam: team.name })}
-        >
-          <div className="buttonIcon">
-            <FontAwesomeIcon icon={iconMap[team.icon]} />
-          </div>
-          <h3>{team.name}</h3>
-        </STeamButton>
-      );
+    let renderedTeamButtons = boardMembers.map((team) => {
+      if (team.name === "Hackathon") {
+        return (
+          <STeamButton
+            selected={team.name === this.state.currentTeam}
+            onClick={() => this.setState({ currentTeam: team.name })}
+          >
+            <div className="buttonImage">
+              <img src={HTH} />
+            </div>
+            <h3>{team.name}</h3>
+          </STeamButton>
+        );
+      } else {
+        return (
+          <STeamButton
+            selected={team.name === this.state.currentTeam}
+            onClick={() => this.setState({ currentTeam: team.name })}
+          >
+            <div className="buttonIcon">
+              <FontAwesomeIcon icon={iconMap[team.icon]} />
+            </div>
+            <h3>{team.name}</h3>
+          </STeamButton>
+        );
+      }
     });
     return renderedTeamButtons;
   };
 
-  renderTeam = teamObj => {
-    const teamMembers = teamObj.members.map(member => {
+  renderTeam = (teamObj) => {
+    const teamMembers = teamObj.members.map((member) => {
       return (
         <SMember>
           <img src={member.img} alt={member.name} />
@@ -144,7 +184,7 @@ class Team extends Component {
   render() {
     let renderedTeamButtons = this.renderTeamButtons();
 
-    let renderedTeams = boardMembers.map(team => {
+    let renderedTeams = boardMembers.map((team) => {
       return this.renderTeam(team);
     });
     return (

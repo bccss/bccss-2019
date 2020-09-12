@@ -4,15 +4,13 @@ import styled from "styled-components";
 import theme from "../../utils/theme";
 import Banner from "../../components/common/Banner";
 import SectionContainer from "../../components/common/SectionContainer";
+import HTH from "../../assets/images/HTH.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPlaceOfWorship,
-  faPencilAlt,
-  faHeart,
   faGraduationCap,
   faLaptopCode,
-  faUsers
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 const AboutContainer = styled.div`
@@ -33,17 +31,17 @@ const AboutContainer = styled.div`
   }
 `;
 
+const Mission = styled.p`
+  text-align: center;
+  font-size: 60px;
+  color: #444444;
+`;
+
 const CircleIcon = styled.div`
   position: relative;
   margin: auto;
   background-color: ${theme.mainColor};
   border-radius: 50%;
-
-  transition: transform 250ms ease-out, border 250ms ease-out;
-  :hover {
-    cursor: pointer;
-    transform: scale(1.025);
-  }
 
   width: 200px;
   height: 200px;
@@ -51,11 +49,7 @@ const CircleIcon = styled.div`
   text-align: center;
 
   * {
-    transition: color 250ms ease-out;
-    color: white;
-    :hover {
-      color: ${theme.secondaryColor};
-    }
+    color: ${theme.secondaryColor};
     margin-top: 50px;
     font-size: 75px;
   }
@@ -67,42 +61,43 @@ class About extends Component {
       <SectionContainer color="#ffffff">
         <Banner position="right">
           <div className="banner">
-            <h1>About BCCSS</h1>
-          </div>
-        </Banner>
+            <h1> About BCCSS </h1>{" "}
+          </div>{" "}
+        </Banner>{" "}
+        <Mission> Mission text goes here... </Mission>{" "}
         <AboutContainer>
           <div className="item">
             <CircleIcon>
-              <FontAwesomeIcon icon={faUsers} />
-            </CircleIcon>
-            <h1>Events</h1>
+              <FontAwesomeIcon icon={faUsers} />{" "}
+            </CircleIcon>{" "}
+            <h1> Events </h1>{" "}
             <p className="description">
               We organize tech talks with interesting developers and
-              programmers.
-            </p>
-          </div>
+              programmers.{" "}
+            </p>{" "}
+          </div>{" "}
           <div className="item">
             <CircleIcon>
-              <FontAwesomeIcon icon={faLaptopCode} />
-            </CircleIcon>
-            <h1>Workshops</h1>
+              <FontAwesomeIcon icon={faGraduationCap} />{" "}
+            </CircleIcon>{" "}
+            <h1> Workshops </h1>{" "}
             <p className="description">
               We organize workshops and monthly project nights for students of
-              all skill levels to build and learn new skills.
-            </p>
-          </div>
+              all skill levels to build and learn new skills.{" "}
+            </p>{" "}
+          </div>{" "}
           <div className="item">
             <CircleIcon>
-              <FontAwesomeIcon icon={faPlaceOfWorship} />
-            </CircleIcon>
-            <h1>Hackathons</h1>
+              <img src={HTH} width="45%" />
+            </CircleIcon>{" "}
+            <h1> Hackathons </h1>{" "}
             <p className="description">
-              We sometimes hit the road and go to hackathons at other colleges.
-              Join us.
-            </p>
-          </div>
-        </AboutContainer>
-        <div>3 circles: Events | Workshop | Hackathons</div>
+              We sometimes hit the road and go to hackathons at other colleges.{" "}
+              Join us.{" "}
+            </p>{" "}
+          </div>{" "}
+        </AboutContainer>{" "}
+        <div> 3 circles: Events | Workshop | Hackathons </div>{" "}
       </SectionContainer>
     );
   }
