@@ -1,6 +1,5 @@
 
 My Tasks:
-- Update scroll bar depending on where you are on the page with react 
 - When you click on an event, it downloads a google calendar file
 
 Roadmap of Items to Change:
