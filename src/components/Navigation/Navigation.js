@@ -111,7 +111,6 @@ class Navigation extends Component {
         window.scrollTo({ top: window.innerHeight * index, behavior: "smooth" });
     };
 
-    // testing code from https://codesandbox.io/s/nifty-newton-f4j0j?file=/src/Header.js:203-605
     componentDidMount() {
       this.listener = document.addEventListener("scroll", e => {
         let scrolled = document.scrollingElement.scrollTop;
@@ -120,14 +119,11 @@ class Navigation extends Component {
         for(let i = 0; i < this.state.screens.length; i++) {
           // if the height of user's view is less than window * index, update on first match only
           if(scrolled < (window.innerHeight * (i + 1))) {
-            console.log(`Match at ${this.state.screens[i].name}`);
             const activeScreen = this.state.screens[i].name;
             this.setState({activeScreen});
             return;
           }
         }
-
-
       });
     }
 
