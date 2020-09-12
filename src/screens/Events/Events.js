@@ -24,6 +24,7 @@ class Events extends Component {
           </div>
         </Banner>
         <CardContainer>
+          {/* Event cards go here. Need to make card container horz. scrollable */}
           <EventCard />
         </CardContainer>
       </SectionContainer>

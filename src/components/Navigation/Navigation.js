@@ -114,15 +114,20 @@ class Navigation extends Component {
     // testing code from https://codesandbox.io/s/nifty-newton-f4j0j?file=/src/Header.js:203-605
     componentDidMount() {
       this.listener = document.addEventListener("scroll", e => {
-        var scrolled = document.scrollingElement.scrollTop;
+        let scrolled = document.scrollingElement.scrollTop;
+        
+        // iterate through possible sections to update event color
+        for(let i = 0; i < this.state.screens.length; i++) {
+          // if the height of user's view is less than window * index, update on first match only
+          if(scrolled < (window.innerHeight * (i + 1))) {
+            console.log(`Match at ${this.state.screens[i].name}`);
+            const activeScreen = this.state.screens[i].name;
+            this.setState({activeScreen});
+            return;
+          }
+        }
 
-        // if scrolled 100 px
-        if (scrolled >= 50) {
-          // force update the status to 'events'
-          const activeScreen = this.state.screens[2].name;
-          this.setState({activeScreen});
-          console.log('updating nav bar');
-        } 
+
       });
     }
 
