@@ -60,7 +60,7 @@ class EventCard extends Component {
               paddingBottom: "20px",
             }}
           >
-            <p style={{ margin: 0 }}>September 15th, 2050 </p>
+            <p style={{ margin: 0 }}>September 15th, 2020 </p>
             <p style={{ margin: 0 }}> • </p>
             <p style={{ margin: 0 }}>6 PM - 7 PM </p>
             <p style={{ margin: 0 }}> • </p>
