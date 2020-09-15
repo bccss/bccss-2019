@@ -27,10 +27,6 @@ class Events extends Component {
         </Banner>
         <CardContainer>
           {/* Event cards go here. Need to make card container horz. scrollable */}
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
         </CardContainer>
       </SectionContainer>
     );
