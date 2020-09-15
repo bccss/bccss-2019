@@ -38,7 +38,7 @@ class EventCard extends Component {
   render() {
     return (
       <CardContainer>
-        <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY3NDg4OTU3NjQxMTQwMDEz/halloween-gettyimages-172988453.jpg" />
+        <img src="https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26100309/blur-close-up-code-computer-546819.jpg" />
         <div className="content">
           <div style={{ display: "flex" }}>
             <p
@@ -49,7 +49,7 @@ class EventCard extends Component {
                 fontWeight: "bolder",
               }}
             >
-              Hacky Halloween
+              First General Meeting
             </p>
           </div>
           <div
@@ -60,17 +60,15 @@ class EventCard extends Component {
               paddingBottom: "20px",
             }}
           >
-            <p style={{ margin: 0 }}>October 30th, 2019 </p>
+            <p style={{ margin: 0 }}>September 15th, 2050 </p>
             <p style={{ margin: 0 }}> • </p>
-            <p style={{ margin: 0 }}>5 PM - 7 PM </p>
+            <p style={{ margin: 0 }}>6 PM - 7 PM </p>
             <p style={{ margin: 0 }}> • </p>
-            <p style={{ margin: 0 }}>Fulton 255 </p>
+            <p style={{ margin: 0 }}>Online </p>
           </div>
           <div>
             <p>
-              Do you like creating things? Are you HYPED for halloweekend? Come
-              enjoy some spooky treats and meet other people interested in
-              participating in BC's hackathon!
+              Join us for our first general meeting on Google Hangouts! We are excited to welcome new members and discuss plans for the 2020-2021 year.
             </p>
           </div>
         </div>

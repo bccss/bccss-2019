@@ -16,7 +16,6 @@ import {
 
 const AboutContainer = styled.div`
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
@@ -63,43 +62,41 @@ class About extends Component {
       <SectionContainer color="#ffffff">
         <Banner position="right">
           <div className="banner">
-            <h1> About BCCSS </h1>{" "}
-          </div>{" "}
-        </Banner>{" "}
+            <h1> About BCCSS </h1>
+          </div>
+        </Banner>
         <Mission> The Boston College Computer science society aims to foster an inclusive tech community for students of all majors to develop their coding skills, encourage each other to make their ideas come to life, and help students navigate through their career journey. </Mission>
         <AboutContainer>
           <div className="item">
             <CircleIcon>
-              <FontAwesomeIcon icon={faUsers} />{" "}
-            </CircleIcon>{" "}
-            <h1> Events </h1>{" "}
+              <FontAwesomeIcon icon={faUsers} />
+            </CircleIcon>
+            <h1> Events </h1>
             <p className="description">
-              We organize tech talks with interesting developers and
-              programmers.{" "}
-            </p>{" "}
-          </div>{" "}
+              We organize tech talks with interesting local developers and
+              programmers as well as career prep and interview practice.
+            </p>
+          </div>
           <div className="item">
             <CircleIcon>
-              <FontAwesomeIcon icon={faGraduationCap} />{" "}
-            </CircleIcon>{" "}
-            <h1> Workshops </h1>{" "}
+              <FontAwesomeIcon icon={faGraduationCap} />
+            </CircleIcon>
+            <h1> Workshops </h1>
             <p className="description">
-              We organize workshops and monthly project nights for students of
-              all skill levels to build and learn new skills.{" "}
-            </p>{" "}
-          </div>{" "}
+              We organize informative community workshops and project nights for students of
+              all experience levels to build and learn new skills. Join us for topics such as collaborative project management on GitHub, basic iOS development in Swift, and advanced machine learning applications.
+            </p>
+          </div>
           <div className="item">
             <CircleIcon>
               <img src={HTH} width="60%" style={{marginTop : 30}}/>
-            </CircleIcon>{" "}
-            <h1> Hackathons </h1>{" "}
+            </CircleIcon>
+            <h1> Hackathons </h1>
             <p className="description">
-              We sometimes hit the road and go to hackathons at other colleges.{" "}
-              Join us.{" "}
-            </p>{" "}
-          </div>{" "}
-        </AboutContainer>{" "}
-        <div> 3 circles: Events | Workshop | Hackathons </div>{" "}
+                We are excited to introduce Boston College's fifth 24-hour hackathon! Hack the Heights is going completely virtual this year! It will feature virtual technical workshops, tech talks, and prizes for beginners and seasoned hackers alike. The event kicks off on Saturday, November 14 and concludes on Sunday, November 15.
+            </p>
+          </div>
+        </AboutContainer>
       </SectionContainer>
     );
   }
