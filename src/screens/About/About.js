@@ -4,7 +4,8 @@ import styled from "styled-components";
 import theme from "../../utils/theme";
 import Banner from "../../components/common/Banner";
 import SectionContainer from "../../components/common/SectionContainer";
-import HTH from "../../assets/images/HTH.png";
+import HTH from "../../assets/images/HTH.svg";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -33,7 +34,8 @@ const AboutContainer = styled.div`
 
 const Mission = styled.p`
   text-align: center;
-  font-size: 60px;
+  font-size: 48px;
+  padding: 0 10% 0 10%;
   color: #444444;
 `;
 
@@ -64,7 +66,7 @@ class About extends Component {
             <h1> About BCCSS </h1>{" "}
           </div>{" "}
         </Banner>{" "}
-        <Mission> Mission text goes here... </Mission>{" "}
+        <Mission> The Boston College Computer science society aims to foster an inclusive tech community for students of all majors to develop their coding skills, encourage each other to make their ideas come to life, and help students navigate through their career journey. </Mission>
         <AboutContainer>
           <div className="item">
             <CircleIcon>
@@ -88,7 +90,7 @@ class About extends Component {
           </div>{" "}
           <div className="item">
             <CircleIcon>
-              <img src={HTH} width="45%" />
+              <img src={HTH} width="60%" style={{marginTop : 30}}/>
             </CircleIcon>{" "}
             <h1> Hackathons </h1>{" "}
             <p className="description">

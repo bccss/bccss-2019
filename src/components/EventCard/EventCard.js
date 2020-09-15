@@ -3,6 +3,12 @@ import styled from "styled-components";
 import theme from "../../utils/theme";
 
 const CardContainer = styled.div`
+margin-left: 30px;
+margin-right; 30px;
+display: inline-block;
+white-space: normal;
+text-align: left;
+
   img {
     z-index: 2;
     width: 500px;
