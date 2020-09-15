@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.528cc4ed.chunk.css",
-    "main.js": "/static/js/main.cedeb1c6.chunk.js",
-    "main.js.map": "/static/js/main.cedeb1c6.chunk.js.map",
+    "main.js": "/static/js/main.adc2c1e0.chunk.js",
+    "main.js.map": "/static/js/main.adc2c1e0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.67b66d60.js",
     "runtime-main.js.map": "/static/js/runtime-main.67b66d60.js.map",
     "static/js/2.5953bc07.chunk.js": "/static/js/2.5953bc07.chunk.js",
     "static/js/2.5953bc07.chunk.js.map": "/static/js/2.5953bc07.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8cc0f2ebe80b432dfaf5ae1753d9fa4e.js": "/precache-manifest.8cc0f2ebe80b432dfaf5ae1753d9fa4e.js",
+    "precache-manifest.1ca1f49e94b74ed3ac2b2b231278fb54.js": "/precache-manifest.1ca1f49e94b74ed3ac2b2b231278fb54.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.528cc4ed.chunk.css.map": "/static/css/main.528cc4ed.chunk.css.map",
     "static/media/Gasson.svg": "/static/media/Gasson.2bc33128.svg",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.67b66d60.js",
     "static/js/2.5953bc07.chunk.js",
     "static/css/main.528cc4ed.chunk.css",
-    "static/js/main.cedeb1c6.chunk.js"
+    "static/js/main.adc2c1e0.chunk.js"
   ]
 }
