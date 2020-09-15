@@ -108,7 +108,7 @@ class Team extends Component {
 
   renderTeamButtons = () => {
     let renderedTeamButtons = boardMembers.map((team) => {
-      if (team.name == "Hackathon") {
+      if (team.name === "Hackathon") {
         return (
           <STeamButton
             selected={team.name === this.state.currentTeam}

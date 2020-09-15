@@ -65,9 +65,13 @@ let SelectedNavItem = styled.div `
   font-size: 20px;
 `;
 
+// this is the navigation bar
 class Navigation extends Component {
     constructor(props) {
         super(props);
+
+        // add a scroll listener to update nav bar
+        this.listener = null;
 
         this.state = {
             screens: [
@@ -86,16 +90,17 @@ class Navigation extends Component {
 
         return screens.map((screen, i) => {
             if (screen.name === activeScreen) {
-                return <SelectedNavItem key = { i } > { screen.name } < /SelectedNavItem>;
+                return <SelectedNavItem key = { i } > { screen.name } </SelectedNavItem>;
             } else {
-                return ( <
+                return ( 
+                  <
                     NavItem key = { i }
-                    onClick = {
-                        () => {
-                            this.scrollTo(i);
-                        }
-                    } > { screen.name } <
-                    /NavItem>
+                    onClick = { 
+                      () => { this.scrollTo(i); }
+                    }
+                  > 
+                    { screen.name } 
+                  </NavItem>
                 );
             }
         });
@@ -107,14 +112,33 @@ class Navigation extends Component {
         window.scrollTo({ top: window.innerHeight * index, behavior: "smooth" });
     };
 
+    componentDidMount() {
+      this.listener = document.addEventListener("scroll", e => {
+        let scrolled = document.scrollingElement.scrollTop;
+        
+        // iterate through possible sections to update event color
+        for(let i = 0; i < this.state.screens.length; i++) {
+          // if the height of user's view is less than window * index, update on first match only
+          if(scrolled < (window.innerHeight * (i + 1))) {
+            const activeScreen = this.state.screens[i].name;
+            this.setState({activeScreen});
+            return;
+          }
+        }
+      });
+    }
+
+    componentDidUpdate() {
+      document.removeEventListener("scroll", this.listener);
+    }
+
+
     render() {
-        return ( <
-            NavigationContainer >
-            <
-            Logo src = { LogoSrc }
-            /> <
-            NavItemsContainer > { this.renderNavItems() } < /NavItemsContainer> < /
-            NavigationContainer >
+        return ( 
+          <NavigationContainer>
+            <Logo src = { LogoSrc }/> 
+            <NavItemsContainer> { this.renderNavItems() } </NavItemsContainer> 
+          </NavigationContainer >
         );
     }
 }
