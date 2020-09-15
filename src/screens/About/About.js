@@ -73,8 +73,7 @@ class About extends Component {
             </CircleIcon>
             <h1> Events </h1>
             <p className="description">
-              We organize tech talks with interesting local developers and
-              programmers as well as career prep and interview practice.
+            The community team is here to help students connect with alumni, faculty and fellow technologists in the BC community. This semester we’re holding virtual events to help provide an environment where the CS community can comfortably network and interact with one another.
             </p>
           </div>
           <div className="item">
