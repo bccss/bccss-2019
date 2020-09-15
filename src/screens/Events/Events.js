@@ -8,10 +8,12 @@ import EventCard from "../../components/EventCard/EventCard";
 
 const CardContainer = styled.div`
   position: relative;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  overflow-x: auto;
+  width: 90%;
+  margin-left: 5%;
+  white-space: nowrap;
+  text-align: center;
 `;
 
 class Events extends Component {
@@ -25,6 +27,9 @@ class Events extends Component {
         </Banner>
         <CardContainer>
           {/* Event cards go here. Need to make card container horz. scrollable */}
+          <EventCard />
+          <EventCard />
+          <EventCard />
           <EventCard />
         </CardContainer>
       </SectionContainer>
