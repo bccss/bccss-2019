@@ -39,12 +39,13 @@ const SubtitleText = styled.p`
 `;
 
 const InputContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15%;
-  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 125px;
+width: 100%;
 `;
 
 const Gasson = styled.img`
@@ -112,7 +113,7 @@ class Home extends Component {
           method="POST"
         >
           <InputContainer>
-            <Gasson src={GassonSrc} />{" "}
+            <Gasson src={GassonSrc} />
             <EmailInput
               type="email"
               placeholder="student@bc.edu"
