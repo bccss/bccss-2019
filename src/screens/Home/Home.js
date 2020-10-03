@@ -9,9 +9,11 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url("https://www.bc.edu/content/dam/bc1/offices/Alumni/sites/landing-pages/bc-zoom-backgrounds/zoom-bg-3.jpg");
+  background-image: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid red;
   box-shadow: 0 0 500px black inset;
-  background-size: 100% auto;
   margin: 0;
   padding: 0;
 `;
