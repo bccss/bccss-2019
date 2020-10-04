@@ -7,15 +7,15 @@
 
 </head>
 
-<div class="navigationContainer">
+<div class="navigation-container">
     <img src="src/img/Logo.svg" class="logo">
-    <div class="navItemsContainer">
-        <div class="navItem" selected="true">Home</div>
-        <div class="navItem" selected="false">About Us</div>
-        <div class="navItem" selected="false">Team</div>
-        <div class="navItem" selected="false">Events</div>
-        <div class="navItem" selected="false">Wiki</div>
-        <div class="navItem" selected="false">Blog</div>
+    <div class="navitems-container">
+        <div class="navitem" selected="true">Home</div>
+        <div class="navitem" selected="false">About Us</div>
+        <div class="navitem" selected="false">Team</div>
+        <div class="navitem" selected="false">Events</div>
+        <div class="navitem" selected="false">Wiki</div>
+        <div class="navitem" selected="false">Blog</div>
     </div>
 </div>
 

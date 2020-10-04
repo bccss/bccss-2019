@@ -1,7 +1,8 @@
 body {
   margin: 0;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
-.navigationContainer {
+.navigation-container {
   position: fixed;
   display: flex;
   background: rgba(255, 255, 255, 0.9);
@@ -17,16 +18,15 @@ body {
   position: absolute;
 }
 
-.navItemsContainer {
+.navitems-container {
   padding: 15px 15px;
   display: flex;
   flex-direction: row;
   align-self: center;
 }
 
-.navItem {
+.navitem {
   margin: 0px 15px;
-  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 200;
   font-size: 20px;
 
@@ -37,17 +37,17 @@ body {
   z-index: 100;
 }
 
-.navItem::before {
+.navitem::before {
   content: "";
   width: 0%;
   transition: width 0.45s;
 }
 
-.navItem:hover {
+.navitem:hover {
   color: #8a100b;
 }
 
-.navItem[selected="false"]:hover::before {
+.navitem[selected="false"]:hover::before {
   content: "";
   border: 1px solid #8a100b;
   bottom: -5px;
@@ -56,15 +56,14 @@ body {
   transition: width 0.45s;
 }
 
-.navItem[selected="true"] {
+.navitem[selected="true"] {
   margin: 0px 15px;
-  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
   color: #dccaa0;
   font-size: 20px;
 }
 
-.bannerContainer {
+.home-container {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -82,16 +81,14 @@ body {
   font-size: 100px;
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
   padding-top: 150px;
   color: white;
 }
 
-#subTitle {
+#sub-title {
   text-align: center;
   font-size: 54px;
-  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 300;
   margin: 0;
   color: #dccaa0;
@@ -101,7 +98,7 @@ body {
   color: white;
 }
 
-.waveContainer {
+.wave-container {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -122,13 +119,13 @@ body {
   max-width: 15%;
 }
 
-.signupContainer {
+.signup-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 500px;
+  top: 50%;
   width: 100%;
 }
 
@@ -136,7 +133,7 @@ body {
   margin-bottom: -20px;
 }
 
-.emailInput {
+.email-input {
   padding: 10px 35px;
   border-radius: 35px;
   border: 4px solid #dccaa0;
@@ -145,7 +142,7 @@ body {
   outline: none;
 }
 
-.joinBtn {
+.join-button {
   background-color: #dccaa0;
   padding: 8px 45px;
   color: white;
@@ -155,6 +152,79 @@ body {
   font-size: 22px;
 }
 
-.joinBtn:hover {
+.join-button:hover {
   cursor: pointer;
+}
+
+.banner {
+  width: 100vw;
+  height: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.banner h1 {
+  width: 30vw;
+  background-color: #8a100b;
+  vertical-align: middle;
+  line-height: 100px;
+  margin: 0;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.right {
+  float: right;
+  padding-left: 50px;
+  border-radius: 100px 0px 0px 100px;
+}
+
+.about-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.about-container .item {
+  text-align: center;
+  width: 300px;
+}
+
+.about-container.description {
+  margin-top: 25px;
+  width: 300px;
+  position: relative;
+}
+
+.mission {
+  overflow: hidden;
+  text-align: center;
+  font-size: 30px;
+  padding: 0 10% 0 10%;
+  color: #444444;
+}
+
+.circle-icon {
+  position: relative;
+  margin: auto;
+  background-color: #8a100b;
+  border-radius: 50%;
+
+  width: 200px;
+  height: 200px;
+
+  text-align: center;
+}
+.circle-icon i {
+  color: #dccaa0;
+  margin-top: 50px;
+  font-size: 75px;
+}
+
+.circle-icon img {
+  color: #dccaa0;
+  width: 60%;
+  margin-top: 30px;
 }
