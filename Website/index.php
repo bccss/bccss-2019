@@ -47,7 +47,7 @@
                 <i class="fas fa-users"></i>
             </div>
             <h1> Events </h1>
-            <p className="description">The community team is here to help students connect with alumni, faculty and fellow technologists in the BC community. This semester we’re holding virtual events to help provide an environment where the CS community can comfortably network and interact with one another.</p>
+            <p class="description">The community team is here to help students connect with alumni, faculty and fellow technologists in the BC community. This semester we’re holding virtual events to help provide an environment where the CS community can comfortably network and interact with one another.</p>
         </div>
 
         <div class="item">
@@ -55,15 +55,67 @@
                 <i class="fas fa-graduation-cap"></i>
             </div>
             <h1> Workshops </h1>
-            <p className="description">We organize informative community workshops and project nights for students of all experience levels to build and learn new skills. Join us for topics such as collaborative project management on GitHub, basic iOS development in Swift, and advanced machine learning applications.</p>
+            <p class="description">We organize informative community workshops and project nights for students of all experience levels to build and learn new skills. Join us for topics such as collaborative project management on GitHub, basic iOS development in Swift, and advanced machine learning applications.</p>
         </div>
 
         <div class="item">
             <div class="circle-icon">
-                <img src="src/img/hth.svg"/>
+                <img src="src/img/hth.svg" />
             </div>
             <h1> Hackathons </h1>
-            <p className="description">We are excited to introduce Boston College's fifth 24-hour hackathon! Hack the Heights is going completely virtual this year! It will feature virtual technical workshops, tech talks, and prizes for beginners and seasoned hackers alike. The event kicks off on Saturday, November 14 and concludes on Sunday, November 15.</p>
+            <p class="description">We are excited to introduce Boston College's fifth 24-hour hackathon! Hack the Heights is going completely virtual this year! It will feature virtual technical workshops, tech talks, and prizes for beginners and seasoned hackers alike. The event kicks off on Saturday, November 14 and concludes on Sunday, November 15.</p>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <div class="banner">
+        <h1 class="left">Team</h1>
+    </div>
+
+    <div class="team-buttons">
+        <div class="team-button">
+            <div class="button-icon">
+                <svg width="63px" height="57px" viewBox="0 0 63 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Revised" transform="translate(-15.000000, -18.000000)" fill="#FECB41">
+                            <path d="M62.2861372,53.3305191 C62.2861372,56.6092684 59.6281857,59.2672199 56.3494364,59.2672199 L35.2620541,59.2672199 C21.754018,58.1068888 15,51.6978298 15,40.0400428 C15,22.5533624 25.3771287,18 35.2620541,18 C45.114294,18 54.9665339,18 64.8187738,18 C67.9533879,18 70.4944946,20.5411068 70.4944946,23.6757208 C70.4944946,26.8103348 67.9533879,29.3514416 64.8187738,29.3514416 L35.2620541,29.3514416 C29.4315584,29.699415 26.5163105,32.7934711 26.5163105,38.63361 C26.5163105,44.4737488 29.4315584,47.3938182 35.2620541,47.3938182 L56.3494364,47.3938182 C59.6281857,47.3938182 62.2861372,50.0517697 62.2861372,53.3305191 Z M30.2083574,38.9367009 C30.2083574,35.6579515 32.8663089,33 36.1450582,33 L57.2324406,33 C70.7404766,34.1603311 77.4944946,40.5693902 77.4944946,52.2271771 C77.4944946,69.7138575 67.1173659,74.2672199 57.2324406,74.2672199 C47.3802006,74.2672199 37.5279607,74.2672199 27.6757208,74.2672199 C24.5411068,74.2672199 22,71.7261132 22,68.5914991 C22,65.4568851 24.5411068,62.9157783 27.6757208,62.9157783 L57.2324406,62.9157783 C63.0629363,62.5678049 65.9781841,59.4737488 65.9781841,53.63361 C65.9781841,47.7934711 63.0629363,44.8734017 57.2324406,44.8734017 L36.1450582,44.8734017 C32.8663089,44.8734017 30.2083574,42.2154502 30.2083574,38.9367009 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <h3>Core</h3>
+        </div>
+        <div class="team-button">
+            <div class="button-icon">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                    <path class="cls-1" d="M83.5,294l142.66,0c0-13.17.09-13.87,0-41.14-.06-13.68-.17-27.37-.25-41q-.12-20.85-.21-41.69-.12-40.05-.17-80.11c0-.61,0-1.22,0-1.79-2.52-.61-2.59-.81-2.36-3.36.11-1.27-.06-2.57-.06-3.86,0-5.76,0-11.52-.07-17.27a4.33,4.33,0,0,0-.72-1.87c-.32-.59-1-1.07-1.12-1.69-.89-3.23-1.66-6.5-2.49-9.75-1.63-6.36-3.31-12.71-4.87-19.08-.72-2.95-1.24-5.95-1.79-8.94-.16-.86,0-1.49,1.21-1.5.33,0,.9-.77.92-1.2s-.53-1.24-.85-1.25c-1.19-.05-1.33-.67-1.32-1.63,0-2.74,0-5.49,0-8.24,0-1.1-.15-2-1.54-2s-1.73.84-1.72,2c0,2.7,0,5.4,0,8.09,0,1-.08,1.72-1.38,1.76-.28,0-.72.85-.74,1.33s.51,1.07.82,1.09c1.26.06,1.45.81,1.38,1.78a10.24,10.24,0,0,1-.26,2c-1.55,5.95-3.17,11.88-4.69,17.84S201,54.38,199.45,60.3c-.15.57-.77,1.43-1.22,1.46-1.5.1-1.59.92-1.58,2.09,0,6.95,0,13.9,0,20.85,0,3.13,0,3.13-3.1,3.14-2.43,0-2.51.08-2.5,2.57q0,8.4,0,16.8c0,.71.14,1.7-.92,1.61-2.19-.18-2.14,1.2-2.13,2.69q0,9.72,0,19.44c0,.77.17,1.77-1,1.66-.34,0-.85-1-.86-1.6-.06-4.56,0-9.13,0-13.69,0-.74-.34-1.9-.85-2.13a33.74,33.74,0,0,0-6.81-2.43c-3.5-.72-6.71.59-9.85,2.06a2.77,2.77,0,0,0-1.8,2.9c.07,4.46,0,8.92,0,13.38,0,.58.39,1.56-.74,1.46-.27,0-.66-.92-.66-1.42-.06-6.17-.06-12.34-.06-18.51,0-4,.22-3.71-3.69-3.7-4.28,0-4.29,0-4.35-4.28,0-.94,0-1.74-1.24-2-.29-.06-.61-.77-.62-1.18-.07-2.44,0-4.88,0-7.31,0-.89.25-1.41,1.23-1.32s1.57-.38,1.63-1.52a1.6,1.6,0,0,1,1.09-1c1-.12,1.54-.64,1.35-1.49a2.27,2.27,0,0,0-1.26-1.54c-1-.21-1.33-.56-1.24-1.53s-.42-1.68-1.46-1.5c-1.4.24-1.72-.3-1.72-1.59,0-.43-.84-1.27-1.13-1.2-.55.14-1.42.83-1.37,1.21.19,1.63-.6,1.72-1.85,1.57-1-.12-1.67.5-1.52,1.47.18,1.16-.26,1.36-1.27,1.59-.5.11-1,1-1.16,1.62s.24,1.42,1.24,1.34,1.34.34,1.22,1.3.47,1.41,1.41,1.33c1.09-.1,1.5.4,1.49,1.45,0,2.38,0,4.77,0,7.15,0,.41-.22,1.1-.46,1.15-1.15.28-1.07,1.1-1.06,1.94s0,1.56,0,2.34c0,2,0,2-2.13,2-1.24,0-2.49.08-3.73,0-1.46-.09-2,.42-2,2,.07,6.59.06,13.17,0,19.76,0,.72.52,2-.74,2s-.88-1.31-.88-2.08q0-6.45.11-12.9a2.7,2.7,0,0,0-2.11-3c-1.93-.6-3.86-1.19-5.73-1.94a4.51,4.51,0,0,0-3.72,0c-1.7.73-3.5,1.25-5.27,1.82-2.43.79-2.44.78-2.44,3.36,0,4.46,0,8.92,0,13.38a2.14,2.14,0,0,1-.49,1.34,1.09,1.09,0,0,1-1.09-.07,2.45,2.45,0,0,1-.37-1.4q-.06-10.19,0-20.38c0-1.09-.23-1.9-1.53-1.76-1.65.18-2-.63-1.94-2.11.07-5.65,0-11.3,0-17,0-1.13-.24-2-1.57-2-3.24.08-2.9-.45-3-3.28,0-.73,0-1.45,0-2.18,0-6.17,0-12.34,0-18.51,0-1.09,0-2.1-1.56-2.14-.34,0-.85-.7-1-1.16-1-3.89-2-7.81-3-11.72-1.64-6.51-3.31-13-4.91-19.53-.55-2.25-.93-4.54-1.32-6.83-.13-.82,0-1.55,1.22-1.48.93.07,1.16-.67,1-1.37-.13-.45-.64-1.13-1-1.14-1.14,0-1.22-.61-1.22-1.5,0-2.8,0-5.6,0-8.4,0-1.11-.19-1.95-1.57-2s-1.72.78-1.7,2c0,2.75,0,5.5,0,8.25,0,.86-.1,1.49-1.2,1.61-.37.05-.85.71-1,1.16-.18.69,0,1.39,1,1.34s1.24.56,1.19,1.4a12.94,12.94,0,0,1-.19,2.16c-1.62,6.57-3.28,13.13-4.93,19.7q-2.09,8.25-4.2,16.48c-.08.32-.25.82-.47.87-1.58.4-1.55,1.6-1.54,2.83,0,7.36,0,14.73.07,22.09,0,1-.18,1.49-1.26,1.35s-1.48.48-1.4,1.5c0,.36,0,.72,0,1.08.14,92.08.08,109.87.35,200.26,0,1,0,2.08,0,3.14" />
+                </svg>
+            </div>
+            <h3>Hackathon</h3>
+        </div>
+        <div class="team-button">
+            <div class="button-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Tech</h3>
+        </div>
+        <div class="team-button">
+            <div class="button-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3>Community</h3>
+        </div>
+        <div class="team-button">
+            <div class="button-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <h3>Career</h3>
+        </div>
+        <div class="team-button">
+            <div class="button-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <h3>Design</h3>
         </div>
     </div>
 

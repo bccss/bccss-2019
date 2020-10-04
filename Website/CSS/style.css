@@ -161,7 +161,6 @@ body {
   height: 100px;
   margin-top: 100px;
   margin-bottom: 100px;
-
 }
 
 .banner h1 {
@@ -176,8 +175,16 @@ body {
 
 .right {
   float: right;
+  text-align: left;
   padding-left: 50px;
-  border-radius: 100px 0px 0px 100px;
+  border-radius: 100px 0 0 100px;
+}
+
+.left {
+  float: left;
+  text-align: right;
+  padding-right: 50px;
+  border-radius: 0 100px 100px 0;
 }
 
 .about-container {
@@ -229,6 +236,50 @@ body {
   margin-top: 30px;
 }
 
+.team-buttons {
+  width: 80vw;
+  margin: auto;
+  padding-top: 5vh;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.team-button {
+  margin: 25px;
+  text-align: center;
+}
+
+.button-icon {
+  position: relative;
+  background-color: #8a100b;
+  border-radius: 50%;
+
+  transition: transform 250ms ease-out, border 250ms ease-out;
+
+  width: 100px;
+  height: 100px;
+
+  text-align: center;
+}
+
+.button-icon:hover {
+  cursor: pointer;
+  transform: scale(1.25) translateY(-3px);
+}
+
+.button-icon * {
+  transition: color 250ms ease-out;
+  color: white;
+  fill: white;
+  margin-top: 25px;
+  width: 50px;
+  font-size: 2.5em;
+  height: 50px;
+}
+
 .footer {
   user-select: none;
 
@@ -242,11 +293,11 @@ body {
   width: 100vw;
 }
 
-.footer>p {
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    text-align: center;
+.footer > p {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
 }
 
 .social-buttons {
@@ -270,13 +321,12 @@ body {
   width: 35px;
   height: 35px;
 }
- 
+
 .social-button:hover {
   cursor: pointer;
   background-color: #dccaa0;
-  
 }
 
 .social-button:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
