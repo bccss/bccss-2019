@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.528cc4ed.chunk.css",
-    "main.js": "/static/js/main.adc2c1e0.chunk.js",
-    "main.js.map": "/static/js/main.adc2c1e0.chunk.js.map",
+    "main.js": "/static/js/main.5862396b.chunk.js",
+    "main.js.map": "/static/js/main.5862396b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.67b66d60.js",
     "runtime-main.js.map": "/static/js/runtime-main.67b66d60.js.map",
-    "static/js/2.5953bc07.chunk.js": "/static/js/2.5953bc07.chunk.js",
-    "static/js/2.5953bc07.chunk.js.map": "/static/js/2.5953bc07.chunk.js.map",
+    "static/js/2.6369107e.chunk.js": "/static/js/2.6369107e.chunk.js",
+    "static/js/2.6369107e.chunk.js.map": "/static/js/2.6369107e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1ca1f49e94b74ed3ac2b2b231278fb54.js": "/precache-manifest.1ca1f49e94b74ed3ac2b2b231278fb54.js",
+    "precache-manifest.daab8e910ef8ddac62e1d96b04a99644.js": "/precache-manifest.daab8e910ef8ddac62e1d96b04a99644.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.528cc4ed.chunk.css.map": "/static/css/main.528cc4ed.chunk.css.map",
     "static/media/Gasson.svg": "/static/media/Gasson.2bc33128.svg",
@@ -18,33 +18,22 @@
     "static/media/Wave2.svg": "/static/media/Wave2.d90e56a4.svg",
     "static/media/andresfernandez.png": "/static/media/andresfernandez.c593eb25.png",
     "static/media/boston.png": "/static/media/boston.674406a8.png",
-    "static/media/brianha.png": "/static/media/brianha.edb05ba2.png",
-    "static/media/danielpark.png": "/static/media/danielpark.da20471d.png",
     "static/media/gasson2.png": "/static/media/gasson2.aacb397c.png",
     "static/media/ginachun.png": "/static/media/ginachun.f198562c.png",
     "static/media/hannahjiang.png": "/static/media/hannahjiang.6f553ea0.png",
     "static/media/hth-lite.dfdf270b.svg": "/static/media/hth-lite.dfdf270b.svg",
-    "static/media/immallachen.png": "/static/media/immallachen.e0cede68.png",
-    "static/media/jackmcclelland.png": "/static/media/jackmcclelland.47b404df.png",
-    "static/media/jaqpyle.png": "/static/media/jaqpyle.4ce9e3b6.png",
-    "static/media/jeffwang.png": "/static/media/jeffwang.f9d328a7.png",
-    "static/media/johnabreu.png": "/static/media/johnabreu.26cfe41e.png",
     "static/media/jolenelozano.png": "/static/media/jolenelozano.0f026cc4.png",
-    "static/media/joykondo.png": "/static/media/joykondo.827bf4db.png",
     "static/media/lindsaypenkrat.png": "/static/media/lindsaypenkrat.7cc4a050.png",
     "static/media/megancostello.png": "/static/media/megancostello.153fbbaa.png",
     "static/media/nathanrankin.png": "/static/media/nathanrankin.369c7609.png",
     "static/media/rogerwang.png": "/static/media/rogerwang.b3cb01ed.png",
-    "static/media/seanchiang.png": "/static/media/seanchiang.de8beaa2.png",
-    "static/media/subraizahmed.png": "/static/media/subraizahmed.57b79f1a.png",
     "static/media/taliakaplanian.png": "/static/media/taliakaplanian.720c85ef.png",
-    "static/media/willfarley.png": "/static/media/willfarley.50cc119d.png",
-    "static/media/yinzhema.png": "/static/media/yinzhema.94ccdcd1.png"
+    "static/media/user.png": "/static/media/user.295af695.png"
   },
   "entrypoints": [
     "static/js/runtime-main.67b66d60.js",
-    "static/js/2.5953bc07.chunk.js",
+    "static/js/2.6369107e.chunk.js",
     "static/css/main.528cc4ed.chunk.css",
-    "static/js/main.adc2c1e0.chunk.js"
+    "static/js/main.5862396b.chunk.js"
   ]
 }
