@@ -228,3 +228,55 @@ body {
   width: 60%;
   margin-top: 30px;
 }
+
+.footer {
+  user-select: none;
+
+  position: relative;
+
+  background-color: #8a100b;
+
+  padding-top: 30px;
+
+  height: 150px;
+  width: 100vw;
+}
+
+.footer>p {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.social-buttons {
+  text-align: center;
+}
+
+.social-button {
+  display: inline-block;
+
+  transition: all 200ms ease-in-out;
+
+  margin: 5px 15px 10px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #8a100b;
+}
+
+.social-button img {
+  transition: transform 200ms ease-in-out;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+}
+ 
+.social-button:hover {
+  cursor: pointer;
+  background-color: #dccaa0;
+  
+}
+
+.social-button:hover img {
+    transform: scale(1.2);
+}
