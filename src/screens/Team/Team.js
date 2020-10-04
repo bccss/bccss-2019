@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import theme from "../../utils/theme";
-import {ReactComponent as HTHLogo} from "../../assets/images/hth-lite.svg";
+import { ReactComponent as HTHLogo } from "../../assets/images/hth-lite.svg";
+import { ReactComponent as BCCSSLogo } from "../../assets/images/Logo.svg";
 
 import SectionContainer from "../../components/common/SectionContainer";
 import Banner from "../../components/common/Banner";
@@ -11,17 +12,16 @@ import { boardMembers } from "../../utils/boardConfig.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPalette,
-  faHeart,
-  faGraduationCap,
+  faBuilding,
   faLaptopCode,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 const iconMap = {
   hth: null,
+  bccss: null,
   faPencilAlt: faPalette,
-  faHeart: faHeart,
-  faGraduationCap: faGraduationCap,
+  faBuilding: faBuilding,
   faLaptopCode: faLaptopCode,
   faUsers: faUsers,
 };
@@ -95,15 +95,19 @@ const SMember = styled.div`
     object-fit: cover;
   }
 
-  h3 {
-    text-align: center;
+  text-align: center;
+
+  h4 {
+    margin-top: -18px;
+    color: #444444;
   }
+
 `;
 
 class Team extends Component {
   constructor(props) {
     super(props);
-    this.state = { currentTeam: "Hackathon" };
+    this.state = { currentTeam: "Core" };
   }
 
   renderTeamButtons = () => {
@@ -115,7 +119,19 @@ class Team extends Component {
             onClick={() => this.setState({ currentTeam: team.name })}
           >
             <div className="buttonIcon">
-              <HTHLogo/>
+              <HTHLogo />
+            </div>
+            <h3>{team.name}</h3>
+          </STeamButton>
+        );
+      } else if (team.name === "Core") {
+        return (
+          <STeamButton
+            selected={team.name === this.state.currentTeam}
+            onClick={() => this.setState({ currentTeam: team.name })}
+          >
+            <div className="buttonIcon">
+              <BCCSSLogo />
             </div>
             <h3>{team.name}</h3>
           </STeamButton>
@@ -143,6 +159,7 @@ class Team extends Component {
         <SMember>
           <img src={member.img} alt={member.name} />
           <h3>{member.name}</h3>
+          <h4>{member.role}</h4>
         </SMember>
       );
     });
