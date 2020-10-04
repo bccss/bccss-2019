@@ -10,7 +10,6 @@ import HTH from "../../assets/images/HTH.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGraduationCap,
-  faLaptopCode,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 

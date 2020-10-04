@@ -42,13 +42,13 @@ const SubtitleText = styled.p`
 `;
 
 const InputContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position: absolute;
-bottom: 125px;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 125px;
+  width: 100%;
 `;
 
 const Gasson = styled.img`
