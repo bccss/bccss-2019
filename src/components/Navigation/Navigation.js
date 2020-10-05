@@ -107,18 +107,29 @@ class Navigation extends Component {
     };
 
     scrollTo = index => {
+        console.log('scroll to called');
         const activeScreen = this.state.screens[index].name;
+        console.log(activeScreen.innerHeight);
         this.setState({ activeScreen });
+        // TODO: update this scroll to 
+        // top: window.innerHeight * index only works when all pages are the size of the website
+        // top: screenContainer[i], behavior: smooth
         window.scrollTo({ top: window.innerHeight * index, behavior: "smooth" });
     };
 
+    // act only after the DOM loaded the component
     componentDidMount() {
+      console.log('did mount called');
+      console.log(this.state.screens[0].innerHeight);
+
+      // scroll listener activates
       this.listener = document.addEventListener("scroll", e => {
         let scrolled = document.scrollingElement.scrollTop;
         
         // iterate through possible sections to update event color
         for(let i = 0; i < this.state.screens.length; i++) {
           // if the height of user's view is less than window * index, update on first match only
+          // TODO: update this scroll to
           if(scrolled < (window.innerHeight * (i + 1))) {
             const activeScreen = this.state.screens[i].name;
             this.setState({activeScreen});
