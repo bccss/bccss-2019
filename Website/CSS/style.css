@@ -256,17 +256,26 @@ body {
   position: relative;
   background-color: #8a100b;
   border-radius: 50%;
-
-  transition: transform 250ms ease-out, border 250ms ease-out;
-
   width: 100px;
   height: 100px;
-
   text-align: center;
 }
 
-.button-icon:hover {
+:not(.selected) > .button-icon {
+  transition: transform 250ms ease-out, border 250ms ease-out;
+}
+
+:not(.selected) > .button-icon:hover {
   cursor: pointer;
+  transform: scale(1.25) translateY(-3px);
+}
+
+.selected > .button-icon * {
+  color: #dccaa0;
+  fill: #dccaa0;
+}
+
+.selected > .button-icon {
   transform: scale(1.25) translateY(-3px);
 }
 
@@ -278,6 +287,35 @@ body {
   width: 50px;
   font-size: 2.5em;
   height: 50px;
+}
+
+.teams-container {
+  position: relative;
+}
+
+.team-group {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  margin: 25px;
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #8a100b;
+  object-fit: cover;
+}
+
+.member h4 {
+  margin-top: -18px;
+  color: #444444;
 }
 
 .footer {

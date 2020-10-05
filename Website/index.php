@@ -73,8 +73,8 @@
     </div>
 
     <div class="team-buttons">
-        <div class="team-button">
-            <div class="button-icon">
+        <div class="team-button selected" id="button-core">
+            <div class="button-icon" >
                 <svg width="63px" height="57px" viewBox="0 0 63 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Revised" transform="translate(-15.000000, -18.000000)" fill="#FECB41">
@@ -85,7 +85,7 @@
             </div>
             <h3>Core</h3>
         </div>
-        <div class="team-button">
+        <div class="team-button" id="button-hackathon" >
             <div class="button-icon">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                     <path class="cls-1" d="M83.5,294l142.66,0c0-13.17.09-13.87,0-41.14-.06-13.68-.17-27.37-.25-41q-.12-20.85-.21-41.69-.12-40.05-.17-80.11c0-.61,0-1.22,0-1.79-2.52-.61-2.59-.81-2.36-3.36.11-1.27-.06-2.57-.06-3.86,0-5.76,0-11.52-.07-17.27a4.33,4.33,0,0,0-.72-1.87c-.32-.59-1-1.07-1.12-1.69-.89-3.23-1.66-6.5-2.49-9.75-1.63-6.36-3.31-12.71-4.87-19.08-.72-2.95-1.24-5.95-1.79-8.94-.16-.86,0-1.49,1.21-1.5.33,0,.9-.77.92-1.2s-.53-1.24-.85-1.25c-1.19-.05-1.33-.67-1.32-1.63,0-2.74,0-5.49,0-8.24,0-1.1-.15-2-1.54-2s-1.73.84-1.72,2c0,2.7,0,5.4,0,8.09,0,1-.08,1.72-1.38,1.76-.28,0-.72.85-.74,1.33s.51,1.07.82,1.09c1.26.06,1.45.81,1.38,1.78a10.24,10.24,0,0,1-.26,2c-1.55,5.95-3.17,11.88-4.69,17.84S201,54.38,199.45,60.3c-.15.57-.77,1.43-1.22,1.46-1.5.1-1.59.92-1.58,2.09,0,6.95,0,13.9,0,20.85,0,3.13,0,3.13-3.1,3.14-2.43,0-2.51.08-2.5,2.57q0,8.4,0,16.8c0,.71.14,1.7-.92,1.61-2.19-.18-2.14,1.2-2.13,2.69q0,9.72,0,19.44c0,.77.17,1.77-1,1.66-.34,0-.85-1-.86-1.6-.06-4.56,0-9.13,0-13.69,0-.74-.34-1.9-.85-2.13a33.74,33.74,0,0,0-6.81-2.43c-3.5-.72-6.71.59-9.85,2.06a2.77,2.77,0,0,0-1.8,2.9c.07,4.46,0,8.92,0,13.38,0,.58.39,1.56-.74,1.46-.27,0-.66-.92-.66-1.42-.06-6.17-.06-12.34-.06-18.51,0-4,.22-3.71-3.69-3.7-4.28,0-4.29,0-4.35-4.28,0-.94,0-1.74-1.24-2-.29-.06-.61-.77-.62-1.18-.07-2.44,0-4.88,0-7.31,0-.89.25-1.41,1.23-1.32s1.57-.38,1.63-1.52a1.6,1.6,0,0,1,1.09-1c1-.12,1.54-.64,1.35-1.49a2.27,2.27,0,0,0-1.26-1.54c-1-.21-1.33-.56-1.24-1.53s-.42-1.68-1.46-1.5c-1.4.24-1.72-.3-1.72-1.59,0-.43-.84-1.27-1.13-1.2-.55.14-1.42.83-1.37,1.21.19,1.63-.6,1.72-1.85,1.57-1-.12-1.67.5-1.52,1.47.18,1.16-.26,1.36-1.27,1.59-.5.11-1,1-1.16,1.62s.24,1.42,1.24,1.34,1.34.34,1.22,1.3.47,1.41,1.41,1.33c1.09-.1,1.5.4,1.49,1.45,0,2.38,0,4.77,0,7.15,0,.41-.22,1.1-.46,1.15-1.15.28-1.07,1.1-1.06,1.94s0,1.56,0,2.34c0,2,0,2-2.13,2-1.24,0-2.49.08-3.73,0-1.46-.09-2,.42-2,2,.07,6.59.06,13.17,0,19.76,0,.72.52,2-.74,2s-.88-1.31-.88-2.08q0-6.45.11-12.9a2.7,2.7,0,0,0-2.11-3c-1.93-.6-3.86-1.19-5.73-1.94a4.51,4.51,0,0,0-3.72,0c-1.7.73-3.5,1.25-5.27,1.82-2.43.79-2.44.78-2.44,3.36,0,4.46,0,8.92,0,13.38a2.14,2.14,0,0,1-.49,1.34,1.09,1.09,0,0,1-1.09-.07,2.45,2.45,0,0,1-.37-1.4q-.06-10.19,0-20.38c0-1.09-.23-1.9-1.53-1.76-1.65.18-2-.63-1.94-2.11.07-5.65,0-11.3,0-17,0-1.13-.24-2-1.57-2-3.24.08-2.9-.45-3-3.28,0-.73,0-1.45,0-2.18,0-6.17,0-12.34,0-18.51,0-1.09,0-2.1-1.56-2.14-.34,0-.85-.7-1-1.16-1-3.89-2-7.81-3-11.72-1.64-6.51-3.31-13-4.91-19.53-.55-2.25-.93-4.54-1.32-6.83-.13-.82,0-1.55,1.22-1.48.93.07,1.16-.67,1-1.37-.13-.45-.64-1.13-1-1.14-1.14,0-1.22-.61-1.22-1.5,0-2.8,0-5.6,0-8.4,0-1.11-.19-1.95-1.57-2s-1.72.78-1.7,2c0,2.75,0,5.5,0,8.25,0,.86-.1,1.49-1.2,1.61-.37.05-.85.71-1,1.16-.18.69,0,1.39,1,1.34s1.24.56,1.19,1.4a12.94,12.94,0,0,1-.19,2.16c-1.62,6.57-3.28,13.13-4.93,19.7q-2.09,8.25-4.2,16.48c-.08.32-.25.82-.47.87-1.58.4-1.55,1.6-1.54,2.83,0,7.36,0,14.73.07,22.09,0,1-.18,1.49-1.26,1.35s-1.48.48-1.4,1.5c0,.36,0,.72,0,1.08.14,92.08.08,109.87.35,200.26,0,1,0,2.08,0,3.14" />
@@ -93,42 +93,183 @@
             </div>
             <h3>Hackathon</h3>
         </div>
-        <div class="team-button">
+        <div class="team-button" id="button-tech">
             <div class="button-icon">
                 <i class="fas fa-laptop-code"></i>
             </div>
             <h3>Tech</h3>
         </div>
-        <div class="team-button">
+        <div class="team-button" id="button-community">
             <div class="button-icon">
                 <i class="fas fa-users"></i>
             </div>
             <h3>Community</h3>
         </div>
-        <div class="team-button">
+        <div class="team-button" id="button-career">
             <div class="button-icon">
                 <i class="fas fa-building"></i>
             </div>
             <h3>Career</h3>
         </div>
-        <div class="team-button">
+        <div class="team-button" id="button-design">
             <div class="button-icon">
                 <i class="fas fa-palette"></i>
             </div>
             <h3>Design</h3>
         </div>
     </div>
+    <div class="teams-container">
+        <div class="team-group" id="team-core">
+            <div class="member">
+                <img src="src/img/people/jolene.png" alt="Jolene" />
+                <h3>Jolene</h3>
+                <h4>President</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/lindsay.png" alt="Lindsay" />
+                <h3>Lindsay</h3>
+                <h4>Vice President</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/roger.png" alt="Roger" />
+                <h3>Roger</h3>
+                <h4>Treasurer</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/megan.png" alt="Megan" />
+                <h3>Megan</h3>
+                <h4>Marketing Director</h4>
+            </div>
+        </div>
+        <div class="team-group" id="team-hackathon">
+            <div class="member">
+                <img src="src/img/people/talia.png" alt="Talia" />
+                <h3>Talia</h3>
+                <h4>Hack the Heights Lead</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/sean.png" alt="Sean" />
+                <h3>Sean</h3>
+            </div>
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Tyler" />
+                <h3>Tyler</h3>
+            </div>
+        </div>
+        <div class="team-group" id="team-tech">
+            <div class="member">
+                <img src="src/img/people/nathan.png" alt="Nathan" />
+                <h3>Nathan</h3>
+                <h4>Tech Lead</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/gina.png" alt="Gina" />
+                <h3>Gina</h3>
+            </div>
+            <div class="member">
+                <img src="src/img/people/andres.png" alt="Andrés" />
+                <h3>Andrés</h3>
+            </div>
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Ben" />
+                <h3>Ben</h3>
+            </div>
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Slok" />
+                <h3>Slok</h3>
+                <h4>Intern</h4>
+            </div>
+        </div>
+        <div class="team-group" id="team-community">
+            <div class="member">
+                <img src="src/img/people/hannah.png" alt="Hannah" />
+                <h3>Hannah</h3>
+                <h4>Community Lead</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Dalia" />
+                <h3>Dalia</h3>
+            </div>
+        </div>
+        <div class="team-group" id="team-career">
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Daniella" />
+                <h3>Daniella</h3>
+                <h4>Career Lead</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Jacqueline" />
+                <h3>Jacqueline</h3>
+            </div>
+        </div>
+        <div class="team-group" id="team-design">
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Adrianna" />
+                <h3>Adrianna</h3>
+                <h4>Design Lead</h4>
+            </div>
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Jacob" />
+                <h3>Jacob</h3>
+            </div>
+            <div class="member">
+                <img src="src/img/people/user.png" alt="Victoria" />
+                <h3>Victoria</h3>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ddaf86e2a8.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
-        var subTitle = document.getElementById('subTitle');
-
+        var subTitle = document.getElementById('sub-title');
         var typewriter = new Typewriter(subTitle, {});
-
         typewriter.typeString('Computer Science Society')
             .pauseFor(2500)
             .start();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#button-core").click();
+        });
+
+        $("#button-core").click(function() {
+            $(".team-group").hide();
+            $(".team-button").removeClass("selected");
+            $("#button-core").addClass("selected");
+            $("#team-core").css('display', 'flex');
+        });
+        $("#button-hackathon").click(function() {
+            $(".team-group").hide();
+            $(".team-button").removeClass("selected");
+            $("#button-hackathon").addClass("selected");
+            $("#team-hackathon").css('display', 'flex');
+        });
+        $("#button-tech").click(function() {
+            $(".team-group").hide();
+            $(".team-button").removeClass("selected");
+            $("#button-tech").addClass("selected");
+            $("#team-tech").css('display', 'flex');
+        });
+        $("#button-community").click(function() {
+            $(".team-group").hide();
+            $(".team-button").removeClass("selected");
+            $("#button-community").addClass("selected");
+            $("#team-community").css('display', 'flex');
+        });
+        $("#button-career").click(function() {
+            $(".team-group").hide();
+            $(".team-button").removeClass("selected");
+            $("#button-career").addClass("selected");
+            $("#team-career").css('display', 'flex');
+        });
+        $("#button-design").click(function() {
+            $(".team-group").hide();
+            $(".team-button").removeClass("selected");
+            $("#button-design").addClass("selected");
+            $("#team-design").css('display', 'flex');
+        });
     </script>
 </body>
 
