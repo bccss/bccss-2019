@@ -47,7 +47,7 @@ body {
   color: #8a100b;
 }
 
-.navitem[selected="false"]:hover::before {
+.navitem:hover:not(.nav-selected)::before {
   content: "";
   border: 1px solid #8a100b;
   bottom: -5px;
@@ -56,7 +56,7 @@ body {
   transition: width 0.45s;
 }
 
-.navitem[selected="true"] {
+.navitem.nav-selected {
   margin: 0px 15px;
   font-weight: 500;
   color: #dccaa0;
