@@ -65,17 +65,27 @@
       </div>
       <div class="title">Boston College</div>
       <div id="sub-title"></div>
-      <div class="signup-container">
-        <img class="gasson" src="img/Gasson.svg" />
-        <input
-          type="email"
-          placeholder="student@bc.edu"
-          autocapitalize="off"
-          autocorrect="off"
-          class="email-input"
-        />
-        <button type="submit" name="join" class="join-button">Join</button>
-      </div>
+      <form
+        action="http://bcskills.us4.list-manage.com/subscribe/post"
+        method="POST"
+      >
+        <div class="signup-container">
+          <img class="gasson" src="img/Gasson.svg" />
+          <input
+            type="email"
+            name="MERGE0"
+            placeholder="student@bc.edu"
+            autocapitalize="off"
+            autocorrect="off"
+            class="email-input"
+          />
+          <button type="submit" name="subscribe" class="join-button">
+            Join
+          </button>
+        </div>
+        <input type="hidden" name="u" value="1b70be498004c115d153aaeeb" />
+        <input type="hidden" name="id" value="59bdfc55c0" />
+      </form>
     </div>
 
     <!-- About -->
