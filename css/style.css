@@ -1,6 +1,14 @@
+@font-face {
+  font-family: tenorSans;
+  src: url(TenorSans-Regular.ttf);
+}
+@font-face {
+  font-family: k2d;
+  src: url(K2D-Regular.ttf);
+}
 body {
   margin: 0;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: tenorSans;
 }
 .navigation-container {
   position: fixed;
@@ -140,6 +148,7 @@ body {
   background-color: white;
   font-size: 20px;
   outline: none;
+  font-family: tenorSans;
 }
 
 .join-button {
@@ -150,6 +159,7 @@ body {
   border-radius: 40px;
   margin-top: 15px;
   font-size: 22px;
+  font-family: tenorSans;
 }
 
 .join-button:hover {
@@ -197,12 +207,17 @@ body {
 .about-container .item {
   text-align: center;
   width: 300px;
+  font-family: k2d;
+}
+.about-container .item h1{
+  font-family: tenorSans;
 }
 
 .about-container.description {
   margin-top: 25px;
   width: 300px;
   position: relative;
+  
 }
 
 .mission {
@@ -211,6 +226,7 @@ body {
   font-size: 30px;
   padding: 0 10% 0 10%;
   color: #444444;
+  font-family: k2d;
 }
 
 .circle-icon {
@@ -303,6 +319,7 @@ body {
 .member {
   margin: 25px;
   text-align: center;
+  font-family: k2d;
 }
 
 .member img {
@@ -368,6 +385,10 @@ body {
   border-bottom: 3px dashed #dccaa0;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: k2d;
+}
+.event-description{
+  font-family: k2d;
 }
 
 .footer {
