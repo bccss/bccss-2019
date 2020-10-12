@@ -209,7 +209,7 @@ body {
   width: 300px;
   font-family: k2d;
 }
-.about-container .item h1{
+.about-container .item h1 {
   font-family: tenorSans;
 }
 
@@ -217,7 +217,6 @@ body {
   margin-top: 25px;
   width: 300px;
   position: relative;
-  
 }
 
 .mission {
@@ -266,6 +265,106 @@ body {
 .team-button {
   margin: 25px;
   text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 40%;
+  overflow: auto;
+}
+
+.modal-content > p {
+  font-family: k2d;
+}
+
+.modal-content > img {
+  float: right;
+}
+
+
+.modal-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-social div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.modal-social img {
+  padding: 15px 20px;
+  width: 50px;
+  filter: invert(1);
+}
+
+.social:hover .bubble {
+  opacity: 1;
+}
+
+.social {
+  position: relative;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  min-width: 100%;
+  text-align: center;
+  background: #000000;
+  border-radius: .4em;
+  font-family: k2d;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #000000;
+  border-bottom: 0;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.bubble p {
+  margin: 3px 5px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .button-icon {
@@ -320,9 +419,10 @@ body {
   margin: 25px;
   text-align: center;
   font-family: k2d;
+  cursor: pointer;
 }
 
-.member img {
+.member-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -372,7 +472,7 @@ body {
   border-radius: 25px;
 }
 
-.event-title{
+.event-title {
   display: flex;
   color: #dccaa0;
   font-size: 1.8em;
@@ -387,7 +487,7 @@ body {
   padding-bottom: 20px;
   font-family: k2d;
 }
-.event-description{
+.event-description {
   font-family: k2d;
 }
 
