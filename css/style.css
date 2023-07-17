@@ -318,7 +318,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -329,8 +329,8 @@ body {
 }
 
 .member img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px solid #8a100b;
   object-fit: cover;
